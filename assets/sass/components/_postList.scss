@@ -16,8 +16,10 @@
 }
 
 .postList h6 {
+  font-family: $sans;
+  letter-spacing: .05em;
+  text-transform: uppercase;
   font-size: ms(-2);
-  font-weight: 400;
 }
 
 .postList h2 {

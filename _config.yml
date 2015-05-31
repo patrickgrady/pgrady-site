@@ -1,9 +1,9 @@
 # Site settings
-title: Title of Site
-author: Name of Author
-email: your-email@domain.com
-description: Description of Site
-url: "http://yourdomain.com"
+title: Patrick Grady, Designer
+author: Patrick Grady
+email: mail@pgrady.com
+description: Portfolio of designer Patrick Grady
+url: "http://www.pgrady.com"
 
 # Build settings
 markdown: kramdown

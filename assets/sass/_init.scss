@@ -13,9 +13,11 @@ $tahoma: Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica: Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial: Arial, Helvetica, "Nimbus Sans L", sans-serif;
 $monospace: "Lucida Sans Typewriter", "Courier New", Consolas,"Andale Mono", "Lucida Console", monospace;
+$sans: ForoSansXLig;
+$serif: ForoRndLig;
 
 // Type Definition
-$base-font-family: $helvetica;
+$base-font-family: $serif;
 $ms-base: 1em;
 $ms-ratio: $major-second;
 
@@ -31,4 +33,4 @@ $blue-light: #0077dd;
 $text-color: $gray-darkest;
 $background-color: $gray-light;
 $active-color: $blue-light;
-$active-hover-color: darken($active-color, 15%);
+$active-hover-color: darken($active-color, 20%);

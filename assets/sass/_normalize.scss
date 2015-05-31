@@ -6,8 +6,19 @@
  */
 
 html {
-  -ms-text-size-adjust: 100%; /* 2 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased; /* crisper type */
+  -moz-osx-font-smoothing: grayscale; /* crisper type */
+  text-rendering: optimizeLegibility; /* better kerning pairs and ligatures */
+  font-feature-settings: "kern";
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  font-feature-settings: "liga" on;
+  font-feature-settings: "contextual";
 }
 
 /**
@@ -97,6 +108,14 @@ a:hover {
   outline: 0;
 }
 
+/**
+ * Removes default fuzzy webkit border.
+ * Spec an alternative in the link styles.
+ */
+
+a:focus {
+  outline: 0;
+}
 /* Text-level semantics
    ========================================================================== */
 

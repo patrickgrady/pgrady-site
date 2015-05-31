@@ -2,6 +2,7 @@ html {
   background-color: $background-color;
   color: $text-color;
   font-family: $base-font-family;
+  font-weight: 400;
   font-size: ms(0);
   line-height: ms(4);
   @include breakpoint(30em){
@@ -25,38 +26,60 @@ body {
   }
 }
 
-a {
+a:link,
+a:visited {
+  @include trans(.08s, ease);
+  text-decoration: none;
   color: $active-color;
-  &:hover { color: $active-hover-color; }
+  background-image:
+    linear-gradient(
+      to top,
+      rgba($active-color, .4) .033em,
+      transparent .033em
+    );
+  background-position-y: .875em;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $active-hover-color;
+    background-image:
+      linear-gradient(
+        to top,
+        rgba($active-hover-color, .4) .033em,
+        transparent .033em
+      );
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $sans;
+  font-weight: normal;
   line-height: ms(1);
   margin: ms(0) 0 ms(-4) 0;
 }
 
 h1 {
-  font-size: ms(4);
+  font-size: ms(5);
 }
 
 h2 {
-  font-size: ms(3);
+  font-size: ms(4);
 }
 
 h3 {
-  font-size: ms(2);
+  font-size: ms(3);
 }
 
 h4 {
-  font-size: ms(1);
+  font-size: ms(2);
 }
 
 h5 {
-  font-size: ms(0);
+  font-size: ms(1);
 }
 
 h6 {
-  font-size: ms(-1);
+  font-size: ms(0);
 }
 
 p {
