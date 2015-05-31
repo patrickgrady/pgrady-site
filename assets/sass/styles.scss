@@ -11,46 +11,8 @@
 @import "../packages/modular-scale/stylesheets/modular-scale";
 @import "../packages/susy/sass/susy";
 
-/* Import fonts */
-@import "../fonts/source-sans-pro-2.010R-ro-1.065R-it/source-sans-pro.css";
-@import "../fonts/source-serif-pro-1.017R/source-serif-pro.css";
-//@import "../fonts/cala-light-web/CalaLigWeb.woff";
-@font-face {
-  font-family: CalaLig;
-  src: url("../fonts/cala-light-web/CalaLigWeb.woff") format("woff");
-}
-@font-face {
-  font-family: CaratLig;
-  src: url("../fonts/carat-light-web/CaratLigWeb.woff") format("woff");
-}
-@font-face {
-  font-family: DantonLig;
-  src: url("../fonts/danton-light-web/DantonLigWeb.woff") format("woff");
-}
-@font-face {
-  font-family: ForoRndLig;
-  src: url("../fonts/foro-rounded-light-web/ForoRndLigWeb.woff") format("woff");
-}
-@font-face {
-  font-family: ManganLig;
-  src: url("../fonts/mangan-light-web/ManganLigWeb.woff") format("woff");
-}
-@font-face {
-  font-family: QuboLig;
-  src: url("../fonts/qubo-light-web/QuboLigWeb.woff") format("woff");
-}
-@font-face {
-  font-family: ForoXLig;
-  src: url("../fonts/foro-extra-light-web/ForoXLigWeb.woff") format("woff");
-}
-@font-face {
-  font-family: OrgonLig;
-  src: url("../fonts/orgon-light-web/Orgon-LigWeb.woff") format("woff");
-}
-@font-face {
-  font-family: ForoSansXLig;
-  src: url("../fonts/foro-sans-extra-light-web/ForoSansXLigWeb.woff") format("woff");
-}
+/* Import webfonts */
+@import "../webfonts/tiempos/tiempos.css";
 
 /* Import Sass variables, etc. */
 @import "init";

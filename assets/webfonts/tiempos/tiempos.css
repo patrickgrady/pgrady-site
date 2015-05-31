@@ -1,0 +1,26 @@
+@font-face {
+    font-family: TiemposText;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("TiemposTextWeb-Regular.eot") format("embedded-opentype"),
+         url("TiemposTextWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: TiemposText;
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: normal;
+    src: url("TiemposTextWeb-RegularItalic.eot") format("embedded-opentype"),
+         url("TiemposTextWeb-RegularItalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: TiemposHeadline;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    src: url("TiemposHeadlineWeb-Bold.eot") format("embedded-opentype"),
+         url("TiemposHeadlineWeb-Bold.woff") format("woff");
+}
