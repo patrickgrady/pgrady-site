@@ -5,6 +5,7 @@ html {
   font-weight: 400;
   font-size: ms(0);
   line-height: ms(4);
+
   @include breakpoint(30em){
     font-size: ms(1);
   }
@@ -14,16 +15,7 @@ html {
 }
 
 body {
-  @include container(90%);
-  @include breakpoint(30em){
-    @include container(80%);
-  }
-  @include breakpoint(45em){
-    @include container(70%);
-  }
-  @include breakpoint(60em){
-    @include container(60%);
-  }
+
 }
 
 a:link,
@@ -34,7 +26,7 @@ a:visited {
   background-image:
     linear-gradient(
       to top,
-      rgba($active-color, .4) .033em,
+      rgba($active-color, .5) .033em,
       transparent .033em
     );
   background-position-y: -.125em;
@@ -45,7 +37,7 @@ a:visited {
     background-image:
       linear-gradient(
         to top,
-        rgba($active-hover-color, .4) .033em,
+        rgba($active-hover-color, .5) .033em,
         transparent .033em
       );
   }
@@ -53,48 +45,58 @@ a:visited {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $display;
+  font-weight: normal;
   line-height: ms(1);
-  margin: ms(0) 0 ms(-4) 0;
+  margin: 0;
 }
 
 h1 {
   font-size: ms(5);
+  margin-bottom: ms(-9);
 }
 
 h2 {
   font-size: ms(4);
+  margin-bottom: ms(-8);
 }
 
 h3 {
   font-size: ms(3);
+  margin-bottom: ms(-7);
 }
 
 h4 {
   font-size: ms(2);
+  margin-bottom: ms(-6);
 }
 
 h5 {
   font-size: ms(1);
+  margin-bottom: ms(-5);
 }
 
 h6 {
   font-size: ms(0);
+  margin-bottom: ms(-4);
 }
 
 p {
   font-size: ms(0);
-  margin: ms(0) 0;
+  margin: 0 0 ms(2) 0;
+}
+
+figure {
+  background-color: $gray-light;
+  margin: ms(2) 0;
+  padding: ms(1) ms(15) 1px ms(15);
 }
 
 img {
   width: 100%;
+  vertical-align: bottom;
 }
 
 section {
-  margin: ms(4) 0;
-}
-
-header, footer {
   margin: ms(4) 0;
 }
 

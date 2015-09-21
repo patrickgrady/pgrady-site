@@ -1,19 +1,15 @@
 ---
 layout: default
-title: home page
+title: home
 ---
 
 <ul class="postList">
-  {% for post in site.categories.project limit:1 %}
+  {% for post in site.posts %}
     <li>
-      <h6>{{ post.date | date: "%b %d, %Y" }} | <a href="{{ site.baseurl }}/{{ post.categories }}/">{{ post.categories }}</a></h6>
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-    </li>
-  {% endfor %}
-  {% for post in site.categories.article limit:1 %}
-    <li>
-      <h6>{{ post.date | date: "%b %d, %Y" }} | <a href="{{ site.baseurl }}/{{ post.categories }}/">{{ post.categories }}</a></h6>
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <h6>{{ post.project-date }}</h6>
+      <h2 class="post__title">{{ post.client }}</h2>
+      <p>{{ post.headline }}</p>
+      <a href="{{ site.baseurl }}{{ post.url }}">View project</a>
     </li>
   {% endfor %}
 </ul>

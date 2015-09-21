@@ -1,13 +1,12 @@
----
-layout: default
----
-
-<div class="post {{ page.categories }}">
-
-  <h6>{{ page.date | date: "%b %d, %Y" }} | <a href="{{ site.baseurl }}/{{ page.categories }}/">{{ page.categories }}</a></h6>
-  <h1>{{ page.title }}</h1>
-  <div class="post-content">
+{% include site-header.html %}
+<div class="Post">
+  <div class="Post-header">
+    {% include page-header.html %}
+    <h1>{{ page.headline }}</h1>
+    <p>{{ page.project-date }} | {{ page.tags | join: "/ " }}</a></p>
+  </div>
+  <div class="Post-content">
     {{ content }}
   </div>
-
 </div>
+{% include site-footer.html %}

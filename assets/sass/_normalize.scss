@@ -11,14 +11,7 @@ html {
   -webkit-font-smoothing: antialiased; /* crisper type */
   -moz-osx-font-smoothing: grayscale; /* crisper type */
   text-rendering: optimizeLegibility; /* better kerning pairs and ligatures */
-  font-feature-settings: "kern";
-  -webkit-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern";
-  -moz-font-feature-settings: "kern=1";
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  font-feature-settings: "liga" on;
-  font-feature-settings: "contextual";
+  font-feature-settings: "onum";
 }
 
 /**
@@ -124,8 +117,9 @@ a:focus {
  */
 
 abbr[title] {
-  border-bottom: 1px dotted;
-  letter-spacing: .1em;
+  //border-bottom: 1px dotted;
+  font-variant: small-caps;
+  letter-spacing: .075em;
 }
 
 /**
@@ -178,14 +172,16 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
+  font-size: ms(-3);
+  font-feature-settings: "tnum";
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
 
 sup {
-  top: -0.5em;
+  top: -0.625em;
+  letter-spacing: .05em;
 }
 
 sub {
@@ -223,13 +219,28 @@ figure {
 }
 
 /**
- * Address differences between Firefox and other browsers.
+ * 1. Address differences between Firefox and other browsers.
  */
 
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
+  background-color: rgba($text-color, .1);
+  border: 0;
+  -moz-box-sizing: content-box; /* 1 */
+  box-sizing: content-box; /* 1 */
+  height: 1px;
+  margin: ms(9) 0;
+  &:before {
+    background-color: $background-color;
+    content: "\00A7";
+    display: inline-block;
+    font-family: $display;
+    font-size: ms(-1);
+    padding: 0 ms(-1);
+    position: relative;
+      bottom: ms(0);
+      left: 50%;
+    transform: translate(-50%);
+  }
 }
 
 /**

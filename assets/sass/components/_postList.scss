@@ -4,15 +4,16 @@
  */
 
 .postList {
+  margin: 0;
   padding-left: 0;
  }
 
 .postList li {
   list-style: none;
-  border-bottom: 1px solid lighten($gray-medium, 15%);
-  &:first-of-type {
-    border-top: 1px solid lighten($gray-medium, 15%);
-  }
+  background: $gray-light;
+  padding: 0 30px;
+  height: 368px;
+  text-align: center;
 }
 
 .postList h6 {

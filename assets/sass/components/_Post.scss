@@ -1,0 +1,42 @@
+/*!
+ * @file (SMACSS module)
+ * Defines post Component
+ */
+
+.Post {
+
+ }
+
+.Post-header {
+  background: $gray-medium;
+  height: 641px;
+  color: white;
+}
+
+.Post-header h1,
+.Post-header p {
+  @include container(100%);
+  @include breakpoint(30em){
+    @include container(80%);
+  }
+  @include breakpoint(45em){
+    @include container(70%);
+  }
+  @include breakpoint(60em){
+    @include container(60%);
+  }
+}
+
+
+.Post-content p {
+  @include container(100%);
+  @include breakpoint(30em){
+    @include container(80%);
+  }
+  @include breakpoint(45em){
+    @include container(70%);
+  }
+  @include breakpoint(60em){
+    @include container(60%);
+  }
+}

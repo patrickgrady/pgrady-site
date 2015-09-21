@@ -25,13 +25,13 @@ $ms-ratio: $major-second;
 // Color Definition
 $gray-darkest: #333;
 $gray-dark: #666;
-$gray-medium: #aaa;
-$gray-light: #eee;
-$off-white: #fbfbfb;
+$gray-medium: #999;
+$gray-light: #f4f4f4;
+$off-white: #fcfcfc;
 $blue-light: #0077dd;
 
 // Color Variables
 $text-color: $gray-darkest;
-$background-color: $gray-light;
+$background-color: $off-white;
 $active-color: $blue-light;
 $active-hover-color: darken($active-color, 20%);
