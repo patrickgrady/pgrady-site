@@ -3,32 +3,47 @@
  * Defines post Component
  */
 
-.Post {
+body#aug .post-intro {
+  background: $aug-primary;
+}
+body#chop .post-intro {
+  background: $chop-primary;
+}
 
- }
-
-.Post-header {
-  background: $gray-medium;
+.post-intro {
   height: 641px;
   color: white;
+  display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  margin: 0px;
 }
 
-.Post-header h1,
-.Post-header p {
-  @include container(100%);
+.post-intro__headline {
+  text-align: center;
+}
+
+.post-intro__metadata {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: ms(4);
+}
+
+.post-intro__headline,
+.ppost-intro__metadata {
+  @include container(90%);
   @include breakpoint(30em){
-    @include container(80%);
+    @include container(85%);
   }
   @include breakpoint(45em){
-    @include container(70%);
+    @include container(80%);
   }
   @include breakpoint(60em){
-    @include container(60%);
+    @include container(75%);
   }
 }
 
-
-.Post-content p {
+.post-content p {
   @include container(100%);
   @include breakpoint(30em){
     @include container(80%);

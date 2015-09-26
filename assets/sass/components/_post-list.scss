@@ -1,0 +1,48 @@
+/*!
+ * @file (SMACSS module)
+ * Defines PostList Component
+ */
+
+.post-list {
+  margin: 0;
+  padding-left: 0;
+ }
+
+.post-list li {
+  list-style: none;
+  background: $gray-medium;
+  color: white;
+  padding: 0 30px;
+  height: 368px;
+  text-align: center;
+  margin-bottom: 1px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-list__metadata {
+  font-style: italic;
+  font-size: ms(-1);
+  margin-bottom: ms(-8);
+}
+
+.post-list__title {
+}
+
+.post-list__button {
+  @extend %button;
+  &.aug {
+    background: $aug-secondary;
+    &:hover {
+      background: darken($aug-secondary, 5%);
+    }
+  }
+  &.chop {
+    background: $chop-secondary;
+    color: white !important;
+    &:hover {
+      background: darken($chop-secondary, 5%);
+    }
+  }
+}

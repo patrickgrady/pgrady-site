@@ -31,10 +31,10 @@
 
 /* Import component rules (SMACSS module) */
 //@import "components/component-partial";
-@import "components/Post";
-@import "components/PostList";
-@import "components/SiteFooter";
-@import "components/SiteHeader";
+@import "components/post";
+@import "components/header";
+@import "components/post-list";
+@import "components/site-footer";
 
 /* Layout rules */
 //@import "layouts/l-layout-partial";

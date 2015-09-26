@@ -1,6 +1,7 @@
 
     <footer class="siteFooter">
-      <small>&copy; {{ site.time | date:"%Y" }} {{ site.author }}</small>
+      <span>&copy; {{ site.time | date:"%Y" }} {{ site.author }}</span>
+      <span class="siteFooter-email">say hello <a href="mailto:{{ site.email }}">{{ site.email }}</a></span>
     </footer>
 
   </body>

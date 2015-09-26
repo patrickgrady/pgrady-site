@@ -1,12 +1,14 @@
 {% include site-header.html %}
-<div class="Post">
-  <div class="Post-header">
-    {% include page-header.html %}
-    <h1>{{ page.headline }}</h1>
-    <p>{{ page.project-date }} | {{ page.tags | join: "/ " }}</a></p>
-  </div>
-  <div class="Post-content">
+{% include header.html %}
+<article>
+  <section class="post-intro">
+    <header>
+      <h1 class="post-intro__headline">{{ page.headline }}</h1>
+      <p class="post-intro__metadata">{{ page.project-date }} • {{ page.tags | join: " / " }}</a></p>
+    </header>
+  </section>
+  <section class="post-content">
     {{ content }}
-  </div>
-</div>
+  </section>
+</article>
 {% include site-footer.html %}

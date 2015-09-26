@@ -3,13 +3,15 @@ layout: default
 title: home
 ---
 
-<ul class="postList">
+<ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <h6>{{ post.project-date }}</h6>
-      <h2 class="post__title">{{ post.client }}</h2>
-      <p>{{ post.headline }}</p>
-      <a href="{{ site.baseurl }}{{ post.url }}">View project</a>
+      <div class="post-list__info">
+        <p class="post-list__metadata">{{ post.project-date }}</p>
+        <h2 class="post-list__title">{{ post.client }}</h2>
+        <p>{{ post.headline }}</p>
+        <a class="post-list__button {{ post.name }}" href="{{ site.baseurl }}{{ post.url }}">View project</a>
+      </div>
     </li>
   {% endfor %}
 </ul>

@@ -87,3 +87,22 @@
   -o-transition: all $timing $easing;
   transition: all $timing $easing;
 }
+
+/* =========================================================
+   Button extend
+   ======================================================== */
+
+.button,
+%button {
+  background: white;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: .25em 1.25em;
+  font-size: 14px;
+  color: $gray-dark !important;
+  font-family: $sans;
+  background-image: none !important;
+  &:hover {
+  }
+}

@@ -1,0 +1,62 @@
+/*!
+ * @file (SMACSS module)
+ * Defines header Component
+ */
+
+.header {
+  font-family: $sans;
+  font-size: 12px;
+  padding: ms(2) 30px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.header-nav {
+  display: inline-block;
+  float: right;
+}
+
+.header-navlink {
+  line-height: 32px;
+  margin-left: .33em;
+}
+
+.header a:link,
+.header a:visited {
+  background-image: none;
+  color: $gray-medium;
+  @extend %all-caps;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $text-color;
+    background-image: none;
+  }
+}
+
+.post .header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+body#aug .header a:link,
+body#aug .header a:visited {
+  color: white;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $aug-secondary;
+  }
+}
+
+body#chop .header a:link,
+body#chop .header a:visited {
+  color: white;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $chop-secondary;
+  }
+}

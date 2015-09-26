@@ -5,4 +5,11 @@
 
 .siteFooter {
   margin: ms(2) 30px;
+  font-family: $sans;
+  font-size: 12px;
+  color: $gray-medium;
+}
+
+.siteFooter-email {
+  float: right;
 }
