@@ -3,20 +3,15 @@
  * Defines post Component
  */
 
-body#aug .post-intro {
-  background: $aug-primary;
-}
-body#chop .post-intro {
-  background: $chop-primary;
-}
-
 .post-intro {
+  background-position: 45% 50%;
+  background-size: cover;
   height: 641px;
   color: white;
   display: flex;
     justify-content: center;
     align-items: flex-end;
-  margin: 0px;
+  margin: 0px 0px ms(4) 0px;
 }
 
 .post-intro__headline {
@@ -44,7 +39,7 @@ body#chop .post-intro {
 }
 
 .post-content p {
-  @include container(100%);
+  @include container(85%);
   @include breakpoint(30em){
     @include container(80%);
   }

@@ -4,25 +4,34 @@
  */
 
 .header {
-  font-family: $sans;
-  font-size: 12px;
-  padding: ms(2) 30px;
-  font-weight: 600;
-  line-height: 32px;
+}
+
+.post .header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 .header-nav {
-  display: inline-block;
-  float: right;
+  font-family: $sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 32px;
+  padding: ms(2) 30px;
 }
 
-.header-navlink {
+.header-nav__navlink {
   line-height: 32px;
   margin-left: .33em;
 }
 
-.header a:link,
-.header a:visited {
+.header-nav__navlink#about {
+  float: right;
+}
+
+.header-nav a:link,
+.header-nav a:visited {
   background-image: none;
   color: $gray-medium;
   @extend %all-caps;
@@ -34,15 +43,8 @@
   }
 }
 
-.post .header {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-}
-
-body#aug .header a:link,
-body#aug .header a:visited {
+body#aug .header-nav a:link,
+body#aug .header-nav a:visited {
   color: white;
   &:hover,
   &:focus,
@@ -51,8 +53,8 @@ body#aug .header a:visited {
   }
 }
 
-body#chop .header a:link,
-body#chop .header a:visited {
+body#chop .header-nav a:link,
+body#chop .header-nav a:visited {
   color: white;
   &:hover,
   &:focus,

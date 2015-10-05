@@ -3,15 +3,16 @@ layout: default
 title: home
 ---
 
-<ul class="post-list">
+<section class="post-list">
+  <h1 class="element-invisible">Selected Works</h1>
   {% for post in site.posts %}
-    <li>
-      <div class="post-list__info">
-        <p class="post-list__metadata">{{ post.project-date }}</p>
-        <h2 class="post-list__title">{{ post.client }}</h2>
-        <p>{{ post.headline }}</p>
-        <a class="post-list__button {{ post.name }}" href="{{ site.baseurl }}{{ post.url }}">View project</a>
-      </div>
-    </li>
+  <article class="post-list__post" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ post.image }})">
+    <header class="post-list__info">
+      <p class="post-list__metadata">{{ post.project-date }}</p>
+      <h2 class="post-list__title">{{ post.client }}</h2>
+      <p>{{ post.headline }}</p>
+      <a class="post-list__button {{ post.name }}" href="{{ site.baseurl }}{{ post.url }}">View project</a>
+    </header>
+  </article>
   {% endfor %}
-</ul>
+</section>

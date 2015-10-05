@@ -27,7 +27,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     //port: 3000,
     //host: 10.0.1.3,
     //scrollProportionally: true,
-    xip: true,
+    xip: true, //your.computer's.ip.xip.io:3000
     online: false
   });
 });

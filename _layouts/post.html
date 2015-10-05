@@ -1,14 +1,14 @@
 {% include site-header.html %}
 {% include header.html %}
-<article>
-  <section class="post-intro">
-    <header>
+<main>
+  <div class="post-intro" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ page.image }})">
+    <div>
       <h1 class="post-intro__headline">{{ page.headline }}</h1>
       <p class="post-intro__metadata">{{ page.project-date }} • {{ page.tags | join: " / " }}</a></p>
-    </header>
-  </section>
-  <section class="post-content">
+    </div>
+  </div>
+  <div class="post-content">
     {{ content }}
-  </section>
-</article>
+  </div>
+</main>
 {% include site-footer.html %}

@@ -5,12 +5,12 @@
 
 .post-list {
   margin: 0;
-  padding-left: 0;
- }
+}
 
-.post-list li {
+.post-list__post {
   list-style: none;
-  background: $gray-medium;
+  background-color: $gray-medium;
+  background-size: cover;
   color: white;
   padding: 0 30px;
   height: 368px;
