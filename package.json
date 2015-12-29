@@ -23,8 +23,10 @@
     "browser-sync": "^2.9.8",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
+    "gulp-imagemin": "^2.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4",
+    "gulp-size": "^2.0.0",
     "gulp-sourcemaps": "^1.6.0",
     "node-sass": "^3.3.3"
   }
