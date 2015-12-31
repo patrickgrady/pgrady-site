@@ -1,0 +1,27 @@
+<div class="post-nav">
+  {% if page.next.url %}
+    <a class="post-nav__post" href="{{ page.next.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ page.next.image }})">
+    <h4 class="post-nav__title">{{ page.next.client }}</h4>
+    </a>
+  {% else %}
+    <!-- Shit's broken. Open PR @https://github.com/Shopify/liquid/pull/456 MANUALLY UPDATE BELOW UNTIL FIXED
+    {% for post in site.posts reversed limit:1 %}
+      <a href="{{ post.url }}">{{ post.client }} looped</a>
+    {% endfor %}-->
+    <a class="post-nav__post" href="{{ site.baseurl }}/2015/05/14/interlochen.html" style="background-image: url({{ site.baseurl }}/assets/imgs/int-hero.jpg)">
+    <h4 class="post-nav__title">Interlochen Center for the Arts</h4>
+    </a>
+  {% endif %}
+
+  {% if page.previous.url %}
+    <a class="post-nav__post" href="{{ page.previous.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ page.previous.image }})">
+    <h4 class="post-nav__title">{{ page.previous.client }}</h4>
+    </a>
+  {% else %}
+    {% for post in site.posts limit:1 %}
+      <a class="post-nav__post" href="{{ post.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ post.image }})">
+      <h4 class="post-nav__title">{{ post.client }}</h4>
+      </a>
+    {% endfor %}
+  {% endif %}
+</div>

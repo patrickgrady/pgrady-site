@@ -1,0 +1,27 @@
+/*!
+ * @file (SMACSS module)
+ * Defines post-nav Component
+ */
+
+.post-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-nav__post {
+  background-color: $gray-medium;
+  background-size: cover;
+  color: white;
+  padding: 0 30px;
+  height: 243px;
+  width: 50%;
+  text-align: center;
+  margin-left: 1px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-nav__title {
+  color: white;
+}
