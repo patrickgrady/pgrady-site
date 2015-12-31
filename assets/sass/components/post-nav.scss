@@ -16,10 +16,12 @@
   height: 243px;
   width: 50%;
   text-align: center;
-  margin-left: 1px;
   display: flex;
     justify-content: center;
     align-items: center;
+    &:first-of-type {
+      margin-right: 1px;
+    }
 }
 
 .post-nav__title {

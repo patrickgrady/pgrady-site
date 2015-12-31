@@ -25,7 +25,7 @@
 }
 
 .post-intro__headline,
-.ppost-intro__metadata {
+.post-intro__metadata {
   @include container(90%);
   @include breakpoint(30em){
     @include container(85%);
@@ -47,6 +47,6 @@
     @include container(70%);
   }
   @include breakpoint(60em){
-    @include container(60%);
+    @include container(54%);
   }
 }

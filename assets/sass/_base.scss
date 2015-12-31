@@ -81,9 +81,16 @@ p {
 }
 
 figure {
-  background-color: $gray-light;
+  //background-color: $gray-light;
   margin: ms(2) 0;
-  padding: ms(1) ms(15) 1px ms(15);
+  padding: ms(1) ms(15);
+}
+
+figcaption {
+  font-style: italic;
+  font-size: ms(-3);
+  line-height: 1.25;
+  margin-top: ms(-3);
 }
 
 img {
