@@ -45,4 +45,11 @@
       background: darken($chop-secondary, 5%);
     }
   }
+  &.int {
+    background: $int-primary;
+    color: white !important;
+    &:hover {
+      background: darken($int-primary, 5%);
+    }
+  }
 }

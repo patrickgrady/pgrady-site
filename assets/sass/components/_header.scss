@@ -62,3 +62,13 @@ body#chop .header-nav a:visited {
     color: $chop-secondary;
   }
 }
+
+body#int .header-nav a:link,
+body#int .header-nav a:visited {
+  color: white;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $int-primary;
+  }
+}

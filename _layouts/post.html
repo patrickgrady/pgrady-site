@@ -11,4 +11,26 @@
     {{ content }}
   </div>
 </main>
+
+<div class="PageNavigation">
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url }}">{{ page.previous.client }} older</a>
+  {% else %}
+    {% for post in site.posts limit:1 %}
+      <a href="{{ post.url }}">{{ post.client }} looped</a>
+    {% endfor %}
+  {% endif %}
+
+  {% if page.next.url %}
+    <a href="{{ page.next.url }}">{{ page.next.client }} newer</a>
+  {% else %}
+    <!-- Shit's broken. Open PR @https://github.com/Shopify/liquid/pull/456 -->
+    {% for post in site.posts reversed limit:1 %}
+      <a href="{{ post.url }}">{{ post.client }} looped</a>
+    {% endfor %}
+  {% endif %}
+</div>
+
+
+
 {% include site-footer.html %}
