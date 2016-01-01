@@ -18,7 +18,10 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 32px;
-  padding: ms(2) 30px;
+  padding: ms(2);
+  @include breakpoint(30em){
+    padding: ms(2) ms(6);
+  }
 }
 
 .header-nav__navlink {
