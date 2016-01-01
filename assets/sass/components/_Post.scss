@@ -4,14 +4,17 @@
  */
 
 .post-intro {
-  background-position: 45% 50%;
+  background-position: 50% 50%;
   background-size: cover;
-  height: 641px;
+  height: 580px;
   color: white;
   display: flex;
     justify-content: center;
     align-items: flex-end;
   margin: 0px 0px ms(4) 0px;
+  @include breakpoint(45em){
+    height: 640px;
+  }
 }
 
 .post-intro__headline {
