@@ -10,19 +10,18 @@
 }
 
 .post-nav__post {
-  background-color: $gray-medium;
-  background-size: cover;
-  background-position: 50% 50%;
-  color: white;
-  padding: 0 30px;
-  height: 243px;
+  @extend .post-list__post;
+  background-position: 50% 50% !important; //overrides default link styling
+  height: 160px;
   width: 50%;
-  text-align: center;
-  display: flex;
-    justify-content: center;
-    align-items: center;
   &:first-of-type {
     margin-right: 1px;
+  }
+  @include breakpoint(45em){
+    height: 201px;
+  }
+  @include breakpoint(60em){
+    height: 243px;
   }
 }
 
