@@ -6,7 +6,7 @@
 .post-intro {
   background-position: 50% 50%;
   background-size: cover;
-  height: 580px;
+  height: 570px;
   color: white;
   display: flex;
     justify-content: center;
@@ -22,6 +22,7 @@
 }
 
 .post-intro__metadata {
+  font-size: ms(-1);
   font-style: italic;
   text-align: center;
   margin-bottom: ms(4);
