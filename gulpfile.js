@@ -47,14 +47,12 @@ gulp.task('sass', function() {
   .pipe(rename('styles.css'))
   .pipe(gulp.dest('assets/css'))
   .pipe(browserSync.reload({stream:true}))
-  .pipe(size({title:'styles'}));
 });
 
 gulp.task('imagemin', function () {
   gulp.src('./assets/imgs/*')
   .pipe(imagemin({progressive:true}))
   .pipe(gulp.dest('_site/assets/imgs'))
-  .pipe(size({title:'images'}));
 });
 
 // Watch scss files for changes & recompile, reload with BrowserSync

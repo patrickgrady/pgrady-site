@@ -68,8 +68,12 @@ h5 {
 }
 
 h6 {
-  font-size: ms(0);
-  margin-bottom: ms(-4);
+  color: $gray-medium;
+  font-family: $sans;
+  font-weight: 600;
+  font-size: 12px;
+  margin-bottom: ms(2);
+  @extend %all-caps;
 }
 
 p {

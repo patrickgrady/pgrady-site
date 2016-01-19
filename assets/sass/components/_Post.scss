@@ -11,7 +11,7 @@
   display: flex;
     justify-content: center;
     align-items: flex-end;
-  margin: 0px 0px ms(4) 0px;
+  margin: 0px 0px ms(8) 0px;
   @include breakpoint(45em){
     height: 640px;
   }
@@ -42,7 +42,16 @@
   }
 }
 
+.post-content {
+}
+
 .post-content p,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
 .post-content__img-inline {
   @include container(85%);
   @include breakpoint(30em){
