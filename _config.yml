@@ -3,7 +3,8 @@ title: Patrick Grady
 author: Patrick Grady
 email: mail@pgrady.com
 description: Design Portfolio of Patrick Grady
-url: "http://www.pgrady.com"
+url: "localhost: 3000"
+baseurl: /pgrady-site/
 
 # Build settings
 markdown: kramdown
