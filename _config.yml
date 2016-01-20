@@ -1,10 +1,9 @@
 # Site settings
 title: Patrick Grady
 author: Patrick Grady
-email: mail@pgrady.com
+email: patrick.a.grady@gmail.com
 description: Design Portfolio of Patrick Grady
-url: "localhost: 3000"
-baseurl: /pgrady-site/
+url: http://localhost:3000
 
 # Build settings
 markdown: kramdown
