@@ -4,6 +4,7 @@ author: Patrick Grady
 email: patrick.a.grady@gmail.com
 description: Design Portfolio of Patrick Grady
 url: http://localhost:3000
+baseurl: /pgrady-site
 
 # Build settings
 markdown: kramdown
