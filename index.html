@@ -3,9 +3,7 @@ layout: default
 title: home
 ---
 {% if jekyll.environment == "production" %}
-   <div>
-     <p>Production!</p>
-   </div>
+  {{ site.baseurl | replace: '!BASE_URL!', "/pgrady-site" }}
 {% endif %}
 <section class="post-list">
   <h1 class="element-invisible">Selected Works</h1>
