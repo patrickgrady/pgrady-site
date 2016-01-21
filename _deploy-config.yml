@@ -3,6 +3,7 @@ title: Patrick Grady
 author: Patrick Grady
 email: patrick.a.grady@gmail.com
 description: Design Portfolio of Patrick Grady
+baseurl: /pgrady-site
 
 # Build settings
 markdown: kramdown

@@ -2,6 +2,7 @@
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
 var cp = require('child_process');
+var ghPages = require('gulp-gh-pages');
 var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var reload = browserSync.reload;
@@ -72,3 +73,24 @@ gulp.task('watch', function () {
 // Default Gulp task. Typing `gulp` will compile the sass,
 // build the Jekyll site, launch BrowserSync & watch files
 gulp.task('default', ['imagemin', 'browser-sync', 'watch']);
+
+/**
+ * Build the Jekyll Site for production
+ */
+gulp.task('jekyll-build-prod', function (done) {
+    browserSync.notify(messages.jekyllBuild);
+
+    var productionEnv = process.env;
+    productionEnv.JEKYLL_ENV = 'production';
+
+    return cp.spawn('jekyll', ['build'], { stdio: 'inherit' , env:productionEnv })
+        .on('close', done);
+});
+
+/**
+ * Deploy to gh-pages
+ */
+gulp.task('deploy', ['jekyll-build-prod'], function() {
+    return gulp.src('./_site/**/*')
+        .pipe(ghPages());
+});
