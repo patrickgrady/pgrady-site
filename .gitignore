@@ -3,3 +3,4 @@ _site
 .DS_Store
 /node_modules
 /assets/packages
+_config-dev.yml
