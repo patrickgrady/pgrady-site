@@ -4,7 +4,7 @@ author: Patrick Grady
 email: patrick.a.grady@gmail.com
 description: Design Portfolio of Patrick Grady
 # baseurl: /pgrady-site # For gh-pages deploy
-baseurl: "!BASE_URL!" # For local development
+baseurl: "" # For local development
 
 
 # Build settings
