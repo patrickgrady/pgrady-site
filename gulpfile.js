@@ -26,10 +26,10 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
   browserSync({
     server: { baseDir: '_site' },
-    //port: 4000,
+    port: 4000,
     //host: 10.0.1.3,
     scrollProportionally: true,
-    xip: true, //your.computer's.ip.xip.io:3000
+    xip: true, //your.computer's.ip.xip.io:port
     online: false
   });
 });
@@ -72,3 +72,10 @@ gulp.task('watch', function () {
 // Default Gulp task. Typing `gulp` will compile the sass,
 // build the Jekyll site, launch BrowserSync & watch files
 gulp.task('default', ['imagemin', 'browser-sync', 'watch']);
+
+// Build the Jekyll Site for production. Changes the baseurl.
+// push this to gh-pages
+gulp.task('deploy', function (done) {
+  return cp.spawn('jekyll', ['build --config=_config.yml,_config_prod.yml'], {stdio: 'inherit'})
+    .on('close', done);
+});

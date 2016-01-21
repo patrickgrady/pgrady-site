@@ -4,6 +4,7 @@ author: Patrick Grady
 email: patrick.a.grady@gmail.com
 description: Design Portfolio of Patrick Grady
 baseurl: /pgrady-site
+url: "http://patrickgrady.github.io"
 
 # Build settings
 markdown: kramdown
