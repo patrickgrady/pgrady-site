@@ -6,4 +6,7 @@
       <a class="header-nav__navlink" id="home" href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
       <a class="header-nav__navlink" id="about" href="{{ site.baseurl }}/about/" title="About">About</a>
     </nav>
+    {% if jekyll.environment == "production" %}
+      {{ assign site.baseurl = "/pgrady-site" }}
+    {% endif %}
   </header>
