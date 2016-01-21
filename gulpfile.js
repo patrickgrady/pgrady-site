@@ -72,10 +72,3 @@ gulp.task('watch', function () {
 // Default Gulp task. Typing `gulp` will compile the sass,
 // build the Jekyll site, launch BrowserSync & watch files
 gulp.task('default', ['imagemin', 'browser-sync', 'watch']);
-
-// Build the Jekyll Site for production. Changes the baseurl.
-// push this to gh-pages
-gulp.task('deploy', function (done) {
-  return cp.spawn('jekyll', ['build --config=_config.yml,_config_prod.yml'], {stdio: 'inherit'})
-    .on('close', done);
-});
