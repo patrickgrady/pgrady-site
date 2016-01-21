@@ -1,6 +1,6 @@
 <div class="post-nav">
   {% if page.next.url %}
-    <a class="post-nav__post" href="{{ page.next.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ page.next.image }})">
+    <a class="post-nav__post" href="{{ site.baseurl }}{{ page.next.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ page.next.image }})">
     <h4 class="post-nav__title">{{ page.next.client }}</h4>
     </a>
   {% else %}
@@ -14,12 +14,12 @@
   {% endif %}
 
   {% if page.previous.url %}
-    <a class="post-nav__post" href="{{ page.previous.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ page.previous.image }})">
+    <a class="post-nav__post" href="{{ site.baseurl }}{{ page.previous.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ page.previous.image }})">
     <h4 class="post-nav__title">{{ page.previous.client }}</h4>
     </a>
   {% else %}
     {% for post in site.posts limit:1 %}
-      <a class="post-nav__post" href="{{ post.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ post.image }})">
+      <a class="post-nav__post" href="{{ site.baseurl }}{{ post.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ post.image }})">
       <h4 class="post-nav__title">{{ post.client }}</h4>
       </a>
     {% endfor %}
