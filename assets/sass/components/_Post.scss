@@ -18,6 +18,9 @@
 }
 
 .post-intro__headline {
+  @include breakpoint(60em){
+    font-size: ms(7);
+  }
   text-align: center;
 }
 

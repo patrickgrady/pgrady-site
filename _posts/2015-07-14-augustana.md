@@ -3,7 +3,7 @@ layout: post
 date: 2015-07-14
 name: aug
 client: Augustana College
-headline: An admissions tool for Augustana College that appeals to students and informs parents
+headline: "An admissions tool for Augustana that appeals to students and informs parents"
 project-date: February–April 2014
 tags:
 - Strategy

@@ -26,7 +26,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
   browserSync({
     server: { baseDir: '_site' },
-    port: 4000,
+    //port: 4000,
     //host: 10.0.1.3,
     scrollProportionally: true,
     xip: true, //your.computer's.ip.xip.io:port

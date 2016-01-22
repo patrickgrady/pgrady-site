@@ -6,7 +6,7 @@ title: home
 <section class="post-list">
   <h1 class="element-invisible">Selected Works</h1>
   {% for post in site.posts %}
-  <article class="post-list__post" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ post.image }})">
+  <article class="post-list__post {{ post.name }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ post.image }})">
     <header class="post-list__info">
       <p class="post-list__metadata">{{ post.project-date }}</p>
       <h2 class="post-list__title">{{ post.client }}</h2>

@@ -18,9 +18,39 @@
   height: 368px;
   margin-bottom: 1px;
   padding: 0 30px;
+  position: relative;
   text-align: center;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    //background-color: $gray-darkest;
+    z-index: 1;
+    opacity: 0;
+    @include trans(.2s, ease);
+  }
+  &.aug:before {
+    background-color: $aug-secondary;
+  }
+  &.chop:before {
+    background-color: $chop-secondary;
+  }
+  &.int:before {
+    background-color: $int-secondary;
+  }
+  &:hover:before {
+    opacity: .1;
+  }
 }
 
+.post-list__info {
+  position: relative;
+  z-index: 2;
+}
 .post-list__metadata {
   font-style: italic;
   font-size: ms(-1);
@@ -33,23 +63,14 @@
 .post-list__button {
   @extend %button;
   &.aug {
-    background: $aug-secondary;
-    &:hover {
-      background: darken($aug-secondary, 5%);
-    }
+    background: $aug-primary;
   }
   &.chop {
-    background: $chop-secondary;
+    background: $chop-primary;
     color: white !important;
-    &:hover {
-      background: darken($chop-secondary, 5%);
-    }
   }
   &.int {
     background: $int-primary;
     color: white !important;
-    &:hover {
-      background: darken($int-primary, 5%);
-    }
   }
 }
