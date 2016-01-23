@@ -4,7 +4,7 @@ date: 2015-05-14
 name: int
 client: "Interlochen Center for the\xA0Arts"
 headline: Two lines and more and more and more and more?
-project-date: February–April 2014
+project-date: January–March 2013
 tags:
 - Strategy
 - IA

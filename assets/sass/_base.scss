@@ -62,7 +62,7 @@ h4 {
   margin-bottom: ms(-6);
 }
 
-h6 {
+h5 {
   font-size: ms(1);
   margin-bottom: ms(-5);
 }
@@ -102,9 +102,16 @@ section {
 }
 
 ul {
-  padding-left: 1.125em;
+  padding-left: 2em;
 }
 
 ol {
-  padding-left: 1.5em;
+  padding-left: 2.5em;
+}
+
+li {
+  color: $gray-medium;
+  & span {
+    color: $text-color;
+  }
 }
