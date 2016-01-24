@@ -4,13 +4,16 @@
     <h4 class="post-nav__title">{{ page.next.client }}</h4>
     </a>
   {% else %}
-    <!-- Shit's broken. Open PR @https://github.com/Shopify/liquid/pull/456 MANUALLY UPDATE BELOW UNTIL FIXED
+    <!-- Broken. Open PR @https://github.com/Shopify/liquid/pull/456
     {% for post in site.posts reversed limit:1 %}
-      <a href="{{ post.url }}">{{ post.client }} looped</a>
-    {% endfor %}-->
-    <a class="post-nav__post {{ page.name }}" href="{{ site.baseurl }}/2015/05/14/interlochen.html" style="background-image: url({{ site.baseurl }}/assets/imgs/int-hero.jpg)">
-    <h4 class="post-nav__title">Interlochen Center for the Arts</h4>
-    </a>
+    {% endfor %} -->
+    <!-- Temporary fix with array -->
+    {% assign lastpost = site.posts | reverse %}
+    {% for post in lastpost limit:1 %}
+      <a class="post-nav__post {{ post.name }}" href="{{ site.baseurl }}{{ post.url }}" style="background-image: url({{ site.baseurl }}/assets/imgs/{{ post.image }})">
+      <h4 class="post-nav__title">{{ post.client }}</h4>
+      </a>
+    {% endfor %}
   {% endif %}
 
   {% if page.previous.url %}
