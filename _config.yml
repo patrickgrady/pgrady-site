@@ -3,9 +3,9 @@ title: Patrick Grady
 author: Patrick Grady
 email: patrick.a.grady@gmail.com
 description: Design Portfolio of Patrick Grady
+permalink: none
 # baseurl: /pgrady-site # For gh-pages deploy
 baseurl: "" # For local development
-
 
 # Build settings
 markdown: kramdown
