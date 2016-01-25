@@ -223,18 +223,18 @@ figure {
  */
 
 hr {
-  border: 0;
+  border: 0px;
   -moz-box-sizing: content-box; /* 1 */
   box-sizing: content-box; /* 1 */
   height: 0px;
-  margin: ms(8) 0;
+  margin: 0px;
+  padding: ms(8) 0 ms(8) 0px;
   &:before {
     background-color: $background-color;
     content: "\2736\2003\2736\2003\2736";
     display: inline-block;
     font-family: $display;
-    font-size: ms(-2);
-    padding: 0 ms(-1);
+    font-size: ms(-3);
     position: relative;
       bottom: ms(0);
       left: 50%;

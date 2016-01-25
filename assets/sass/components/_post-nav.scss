@@ -3,10 +3,36 @@
  * Defines post-nav Component
  */
 
-.post-nav {
+.post-nav__header {
+  background-color: $gray-light;
+  height: 1px;
+  margin: ms(6) 0 ms(8) 0;
+  @include container(85%);
+  @include breakpoint(30em){
+    @include container(80%);
+  }
+  @include breakpoint(45em){
+    @include container(70%);
+  }
+  @include breakpoint(60em){
+    @include container(54%);
+  }
+  &:before {
+    background-color: $background-color;
+    content: "View More Projects";
+    display: inline-block;
+    font-size: ms(-1);
+    padding: 0 ms(2);
+    position: relative;
+      left: 50%;
+    transform: translate(-50%, -60%);
+  }
+}
+
+.post-nav-posts {
   display: flex;
   flex-direction: row;
-  margin-top: ms(8);
+  margin-top: ms(1);
 }
 
 .post-nav__post {
