@@ -31,8 +31,9 @@
 
 /* Import component rules (SMACSS module) */
 //@import "components/component-partial";
-@import "components/post";
 @import "components/header";
+@import "components/link-list";
+@import "components/post";
 @import "components/post-list";
 @import "components/post-nav";
 @import "components/site-footer";

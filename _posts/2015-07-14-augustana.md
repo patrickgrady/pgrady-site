@@ -11,6 +11,15 @@ tags:
 - Strategy
 - IA
 - Design
+links:
+  - name: The Design System Style Guide
+    url: http://patrickgrady.github.io/augustana/
+    target: _blank
+    title: Augustana Style Guide
+  - name: Augustana's Live Site
+    url: http://www.augie.edu/
+    target: _blank
+    title: Augustana College
 ---
 
 <h6>The Brief</h6>
@@ -55,7 +64,7 @@ tags:
 
 <h6>The Result</h6>
 
-<p>Below are some of the templates that got created for Augustana. It just isn't possible to show everything that went into this project, so please take a look at the finished <a href="http://patrickgrady.github.io/augustana/" target="_blank">style guide</a> for full effect.</p>
+<p>See how the design elements and components of the design gave form to the system's templates.</p>
 
 <figure class="post-content__img-wide">
   <img class="screen" src="{{ site.baseurl }}/assets/imgs/aug-home.jpg"/>
@@ -93,3 +102,6 @@ tags:
     <img class="screen" src="{{ site.baseurl }}/assets/imgs/aug-footer.jpg"/>
   </div>
 </figure>
+
+<h6>More about this project</h6>
+<p>Check out the style guide below to see <i>everything</i> that got designed for Augustana including the responsive, in-browser prototypes.</p>

@@ -1,0 +1,7 @@
+<ul class="link-list">
+  {% for link in page.links %}
+    <a class="link-list-item" href="{{ link.url }}" target="{{ link.target }}" title="{{ link.title }}">
+      <li class="link-list-item__name">{{ link.name }}</li>
+    </a>
+  {% endfor %}
+</ul>

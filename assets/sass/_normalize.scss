@@ -223,18 +223,17 @@ figure {
  */
 
 hr {
-  background-color: rgba($text-color, .1);
   border: 0;
   -moz-box-sizing: content-box; /* 1 */
   box-sizing: content-box; /* 1 */
-  height: 1px;
-  margin: ms(9) 0;
+  height: 0px;
+  margin: ms(8) 0;
   &:before {
     background-color: $background-color;
-    content: "\00A7";
+    content: "\2736\2003\2736\2003\2736";
     display: inline-block;
     font-family: $display;
-    font-size: ms(-1);
+    font-size: ms(-2);
     padding: 0 ms(-1);
     position: relative;
       bottom: ms(0);
