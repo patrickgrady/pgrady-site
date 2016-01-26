@@ -60,7 +60,7 @@ links:
   <img class="screen" src="{{ site.baseurl }}/assets/imgs/aug-styleguide.jpg"/>
 </figure>
 
-<p>I continued in this way creating new components, refining existing components, and working out the responsive behavior of the templates. By the end I had a fully flushed-out design system that was documented, styled, and ready for CMS development.</p>
+<p>I continued by creating new components, refining existing components, and working out the responsive behavior of the templates. By the end I had a fully flushed-out design system that was documented, styled, and ready for CMS development.</p>
 
 <h6>The Result</h6>
 
@@ -104,4 +104,4 @@ links:
 </figure>
 
 <h6>More about this project</h6>
-<p>Check out the style guide below to see <i>everything</i> that got designed for Augustana including the responsive, in-browser prototypes.</p>
+<p>Check out the style guide below to see <i>everything</i> that got designed for Augustana including the in-browser prototypes.</p>

@@ -6,7 +6,7 @@
 .post-nav__header {
   background-color: $gray-light;
   height: 1px;
-  margin: ms(6) 0 ms(8) 0;
+  margin: ms(16) 0 ms(12) 0;
   @include container(85%);
   @include breakpoint(30em){
     @include container(80%);
@@ -21,11 +21,11 @@
     background-color: $background-color;
     content: "View More Projects";
     display: inline-block;
-    font-size: ms(-1);
+    font-size: ms(0);
     padding: 0 ms(2);
     position: relative;
       left: 50%;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -50%);
   }
 }
 
