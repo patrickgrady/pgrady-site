@@ -1,6 +1,12 @@
-html {
-  background-color: $background-color;
-  color: $text-color;
+/**
+ * @file
+ * Base partial.
+ * HTML elements and shared styles.
+ */
+
+ html {
+  background-color: $color--bg;
+  color: $color--text;
   font-family: $base-font-family;
   font-weight: 400;
   font-size: ms(1);
@@ -14,22 +20,22 @@ a:link,
 a:visited {
   @include trans(.08s, ease);
   text-decoration: none;
-  color: $active-color;
+  color: $color--active;
   background-image:
     linear-gradient(
       to top,
-      rgba($active-color, .5) .033em,
+      rgba($color--active, .5) .033em,
       transparent .033em
     );
   background-position-y: -.125em;
   &:hover,
   &:focus,
   &:active {
-    color: $active-hover-color;
+    color: $color--active-hover;
     background-image:
       linear-gradient(
         to top,
-        rgba($active-hover-color, .5) .033em,
+        rgba($color--active-hover, .5) .033em,
         transparent .033em
       );
   }
@@ -68,7 +74,7 @@ h5 {
 }
 
 h6 {
-  color: $gray-medium;
+  color: $color--gray-medium;
   font-family: $sans;
   font-weight: 600;
   font-size: 12px;
@@ -76,7 +82,9 @@ h6 {
   @extend %all-caps;
 }
 
-p {
+p,
+ul,
+ol {
   font-size: ms(0);
   margin: 0 0 ms(2) 0;
 }
@@ -102,16 +110,94 @@ section {
 }
 
 ul {
-  padding-left: 2em;
+  list-style-type: disc;
 }
 
-ol {
-  padding-left: 2.5em;
+ol,
+ul {
+  list-style-position: inside;
+  padding: 0;
 }
 
-li {
-  color: $gray-medium;
-  & span {
-    color: $text-color;
+li > ol,
+li > ul {
+  padding-left: 1.1em;
+  margin-bottom: 0px;
+}
+
+.img-inline {
+  @include container(85%);
+  @include breakpoint(30em){
+    @include container(80%);
+  }
+  @include breakpoint(45em){
+    @include container(70%);
+  }
+  @include breakpoint(60em){
+    @include container(54%);
+  }
+}
+
+.img-wide {
+  @include container(85%);
+  @include breakpoint(30em){
+    @include container(80%);
+  }
+  @include breakpoint(45em){
+    @include container(75%);
+  }
+  @include breakpoint(60em){
+    @include container(75%);
+  }
+}
+
+.img-row {
+  @include container(85%);
+  @include breakpoint(30em){
+    @include container(80%);
+  }
+  @include breakpoint(45em){
+    @include container(75%);
+  }
+  @include breakpoint(60em){
+    @include container(75%);
+  }
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  & .flex-container {
+    flex-basis: auto;
+    margin-right: 10px;
+    @include breakpoint(45em){
+      margin-right: ms(4);
+    }
+    @include breakpoint(60em){
+      margin-right: ms(8);
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.measure {
+  @include container(85%);
+  @include breakpoint(30em){
+    @include container(80%);
+  }
+  @include breakpoint(45em){
+    @include container(70%);
+  }
+  @include breakpoint(60em){
+    @include container(54%);
+  }
+}
+
+.screen {
+  border: 1px solid #f1f1f1;
+  box-shadow: 0px 2px 18px 0px rgba(0,0,0, .04);
+  @include breakpoint(45em){
+    border-radius: .25em;
   }
 }

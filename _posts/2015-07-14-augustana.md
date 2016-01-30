@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2015-07-14
+date: 2016-01-23
 permalink: augustana/
 name: aug
 client: Augustana College
@@ -12,7 +12,7 @@ tags:
 - IA
 - Design
 links:
-  - name: The Design System Style Guide
+  - name: The Web Style Guide
     url: http://patrickgrady.github.io/augustana/
     target: _blank
     title: Augustana Style Guide
@@ -22,55 +22,65 @@ links:
     title: Augustana College
 ---
 
-<h6>The Brief</h6>
+<div class="measure">
+  <h6>The Brief</h6>
 
-<p>The team at Augustana had started to feel like they were outgrowing their current site. They had  noticed that a significant portion of their site’s traffic was mobile. They also wanted a highly customizable system that their internal staff could adapt and expand on their own. And their new site would have impress and inform, equally, to an audience of parents, teens, faculty, and alumni.</p>
+  <p>The team at Augustana had started to feel like they were outgrowing their current site. They had  noticed that a significant portion of their site’s traffic was mobile. They also wanted a highly customizable system that their internal staff could adapt and expand on their own. And their new site would have impress and inform, equally, to an audience of parents, teens, faculty, and alumni.</p>
 
-<h6>The Process</h6>
+  <h6>The Process</h6>
 
-<p>To kick things off we flew to Sioux Falls for a few days of discovery. During these meetings we immersed ourselves in the lives of our clients. We identified pain-points, discussed technical aspects of the project, and gauged design sensibilities. We also participated with the client in exercises designed to document observations and insights, which we then used to define our goals and priorities.</p>
+  <p>To kick things off we flew to Sioux Falls for a few days of discovery. During these meetings we immersed ourselves in the lives of our clients. We identified pain-points, discussed technical aspects of the project, and gauged design sensibilities. We also participated with the client in exercises designed to document observations and insights, which we then used to define our goals and priorities.</p>
 
-<p>After discovery, I surveyed the current site’s content and developed a set of templates. I began by whiteboarding, adding content to each template and mapping existing page types. I merged page types and found ways to reuse templates whenever possible. I noticed shared, repeatable parts and pieces emerging. These formed the building blocks of my design system.</p>
+  <p>After discovery, I surveyed the current site’s content and developed a set of templates. I began by whiteboarding, adding content to each template and mapping existing page types. I merged page types and found ways to reuse templates whenever possible. I noticed shared, repeatable parts and pieces emerging. These formed the building blocks of my design system.</p>
+</div>
 
-<figure class="post-content__img-inline">
+<figure class="img-inline">
   <img class="" src="{{ site.baseurl }}/assets/imgs/aug-evolution.png"/>
 </figure>
 
-<figure class="post-content__img-wide">
+<figure class="img-wide">
   <img class="" src="{{ site.baseurl }}/assets/imgs/aug-wires.png"/>
 </figure>
 
-<p>While addressing feedback on the templates I began to think about visual design. I gathered existing assets that define the brand and explored combinations of logos, type, color, and photography. This was meant to be fast and loose so I could establish the visual language without having to draw pictures of&nbsp;websites.</p>
+<div class="measure">
+  <p>While addressing feedback on the templates I began to think about visual design. I gathered existing assets that define the brand and explored combinations of logos, type, color, and photography. This was meant to be fast and loose so I could establish the visual language without having to draw pictures of&nbsp;websites.</p>
+</div>
 
-<figure class="post-content__img-wide">
+<figure class="img-wide">
   <img class="" src="{{ site.baseurl }}/assets/imgs/aug-elements.jpg"/>
 </figure>
 
-<p>Then I used Sketch to play with some ideas and let the design process happen. I worked on a homepage concept with parallax scrolling, and I  experimented with the header and footer.</p>
+<div class="measure">
+  <p>Then I used Sketch to play with some ideas and let the design process happen. I worked on a homepage concept with parallax scrolling, and I  experimented with the header and footer.</p>
+</div>
 
-<figure class="post-content__img-inline">
+<figure class="img-inline">
   <img class="" src="{{ site.baseurl }}/assets/imgs/aug-header-footer.png"/>
 </figure>
 
-<p>When I felt I had enough to go on, I took these initial ideas into code. I chose to use Jekyll because it already has the concepts of modular parts and pieces built right in and would allow me to work on components discretely and reuse them easily.</p>
+<div class="measure">
+  <p>When I felt I had enough to go on, I took these initial ideas into code. I chose to use Jekyll because it already has the concepts of modular parts and pieces built right in and would allow me to work on components discretely and reuse them easily.</p>
 
-<p>Because of these advantages, a style guide could  be built with minimal effort in addition to the templates. It would document the entire system, reuse the same components populating the templates, live on github pages, and update with a push if changes were made. In fact, this is how we rolled the work out to the Augustana team.</p>
+  <p>Because of these advantages, a style guide could  be built with minimal effort in addition to the templates. It would document the entire system, reuse the same components populating the templates, live on github pages, and update with a push if changes were made. In fact, this is how we rolled the work out to the Augustana team.</p>
+</div>
 
-<figure class="post-content__img-inline">
+<figure class="img-inline">
   <img class="screen" src="{{ site.baseurl }}/assets/imgs/aug-styleguide.jpg"/>
 </figure>
 
-<p>I continued by creating new components, refining existing components, and working out the responsive behavior of the templates. By the end I had a fully flushed-out design system that was documented, styled, and ready for CMS development.</p>
+<div class="measure">
+  <p>I continued by creating new components, refining existing components, and working out the responsive behavior of the templates. By the end I had a fully flushed-out design system that was documented, styled, and ready for CMS development.</p>
 
-<h6>The Result</h6>
+  <h6>The Result</h6>
 
-<p>See how the design elements and components of the design gave form to the system's templates.</p>
+  <p>See how the design elements and components of the design gave form to the system's templates.</p>
+</div>
 
-<figure class="post-content__img-wide">
+<figure class="img-wide">
   <img class="screen" src="{{ site.baseurl }}/assets/imgs/aug-home.jpg"/>
 </figure>
 
-<figure class="post-content__img-centered">
+<figure class="img-row">
   <div class="flex-container">
     <img class="screen" src="{{ site.baseurl }}/assets/imgs/aug-event.jpg"/>
   </div>
@@ -79,13 +89,13 @@ links:
   </div>
 </figure>
 
-<figure class="post-content__img-centered">
+<figure class="img-row">
   <div class="flex-container">
     <img class="screen" src="{{ site.baseurl }}/assets/imgs/aug-general.jpg"/>
   </div>
 </figure>
 
-<figure class="post-content__img-centered">
+<figure class="img-row">
   <div class="flex-container">
     <img class="screen" src="{{ site.baseurl }}/assets/imgs/aug-mobile-1.jpg"/>
   </div>
@@ -97,11 +107,13 @@ links:
   </div>
 </figure>
 
-<figure class="post-content__img-centered">
+<figure class="img-row">
   <div class="flex-container">
     <img class="screen" src="{{ site.baseurl }}/assets/imgs/aug-footer.jpg"/>
   </div>
 </figure>
 
-<h6>More about this project</h6>
-<p>Check out the style guide below to see <i>everything</i> that got designed for Augustana including the in-browser prototypes.</p>
+<div class="measure">
+  <h6>More about this project</h6>
+  <p>Check out the style guide below to see <i>everything</i> that got designed for Augustana including the in-browser prototypes.</p>
+</div>

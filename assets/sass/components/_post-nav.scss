@@ -4,7 +4,7 @@
  */
 
 .post-nav__header {
-  background-color: $gray-light;
+  background-color: $color--gray-light;
   height: 1px;
   margin: ms(16) 0 ms(12) 0;
   @include container(85%);
@@ -18,7 +18,7 @@
     @include container(54%);
   }
   &:before {
-    background-color: $background-color;
+    background-color: $color--bg;
     content: "View More Projects";
     display: inline-block;
     font-size: ms(0);

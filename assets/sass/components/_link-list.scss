@@ -10,14 +10,14 @@
 
 .link-list-item {
   background-image: none !important;
-  border-top: 1px solid $gray-light;
+  border-top: 1px solid $color--gray-light;
   display: block;
   padding: ms(-1) 0;
   &:last-of-type {
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid $color--gray-light;
   }
   &:hover .link-list-item__name {
-    color: $active-color;
+    color: $color--active;
   }
   &:hover .link-list-item__name:after {
     opacity: 1;
@@ -27,7 +27,7 @@
 
 .link-list-item__name {
   @include trans(.08s, ease);
-  color: $text-color;
+  color: $color--text;
   position: relative;
   &:after {
     @include triangle(.275em, currentColor);

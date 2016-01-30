@@ -36,12 +36,12 @@
 .header-nav a:link,
 .header-nav a:visited {
   background-image: none;
-  color: $gray-medium;
+  color: $color--gray-medium;
   @extend %all-caps;
   &:hover,
   &:focus,
   &:active {
-    color: $text-color;
+    color: $color--text;
     background-image: none;
   }
 }
@@ -52,7 +52,7 @@ body#aug .header-nav a:visited {
   &:hover,
   &:focus,
   &:active {
-    color: $aug-primary;
+    color: $color--aug-primary;
   }
 }
 
@@ -62,7 +62,7 @@ body#chop .header-nav a:visited {
   &:hover,
   &:focus,
   &:active {
-    color: $chop-primary;
+    color: $color--chop-primary;
   }
 }
 
@@ -72,6 +72,6 @@ body#int .header-nav a:visited {
   &:hover,
   &:focus,
   &:active {
-    color: $int-primary;
+    color: $color--int-primary;
   }
 }

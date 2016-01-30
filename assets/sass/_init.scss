@@ -23,24 +23,23 @@ $ms-base: 1em;
 $ms-ratio: $major-second;
 
 // Color Definition
-$gray-darkest: #333;
-$gray-dark: #666;
-$gray-medium: #999;
-$gray-light: #dfdfdf;
-$off-white: #fcfcfc;
-$blue-light: #0077dd;
+$color--gray-darkest: #333;
+$color--gray-dark: #666;
+$color--gray-medium: #999;
+$color--gray-light: #dfdfdf;
+$color--off-white: #fcfcfc;
+$color--blue-medium: #0077dd;
 
 // Color Variables
-$text-color: $gray-darkest;
-$background-color: $off-white;
-$active-color: $blue-light;
-$active-hover-color: darken($active-color, 20%);
+$color--text: $color--gray-darkest;
+$color--bg: $color--off-white;
+$color--active: $color--blue-medium;
+$color--active-hover: darken($color--active, 20%);
 
 // Brand Variables
-$brand-primary: $gray-medium;
-$aug-primary: #ffd200;
-$aug-secondary: #002147;
-$chop-primary: #F98B36;
-$chop-secondary: #214D55;
-$int-primary: #DA2741;
-$int-secondary: #363433;
+$color--aug-primary: #ffd200;
+$color--aug-secondary: #002147;
+$color--chop-primary: #F98B36;
+$color--chop-secondary: #214D55;
+$color--int-primary: #DA2741;
+$color--int-secondary: #363433;

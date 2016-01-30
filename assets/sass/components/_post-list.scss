@@ -8,7 +8,7 @@
 }
 
 .post-list__post {
-  background-color: $gray-light;
+  background-color: $color--gray-light;
   background-size: cover;
   background-position: 50% 10%;
   color: white;
@@ -33,13 +33,13 @@
     @include trans(.2s, ease);
   }
   &.aug:before {
-    background-color: $aug-secondary;
+    background-color: $color--aug-secondary;
   }
   &.chop:before {
-    background-color: $chop-secondary;
+    background-color: $color--chop-secondary;
   }
   &.int:before {
-    background-color: $int-secondary;
+    background-color: $color--int-secondary;
   }
   &:hover:before {
     opacity: .11;
@@ -62,14 +62,14 @@
 .post-list__button {
   @extend %button;
   &.aug {
-    background: $aug-primary;
+    background: $color--aug-primary;
   }
   &.chop {
-    background: $chop-primary;
+    background: $color--chop-primary;
     color: white !important;
   }
   &.int {
-    background: $int-primary;
+    background: $color--int-primary;
     color: white !important;
   }
 }

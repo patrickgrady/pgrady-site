@@ -4,7 +4,7 @@ title: styleguide index
 permalink: /style-guide/index.html
 ---
 
-<article>
+<article class="measure">
   <section>
     <h1>This is an H1</h1>
     <p>It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.</p>
@@ -21,32 +21,57 @@ permalink: /style-guide/index.html
   </section>
   <hr/>
   <section>
-    <h5>Unordered Lists</h5>
+    <h6>Unordered Lists</h6>
     <ul>
-      <li><span>This is the first item in an unordered list.</span></li>
-      <li><span>This is the second item in an unordered list.</span></li>
-      <li><span>This is the third item in an unordered list.</span></li>
-      <li><span>This is the fourth item in an unordered list.
-        <ol>
-          <li><span>This is the first nested list item.</span></li>
-          <li><span>This is the second nested list item.</span></li>
-          <li><span>This is the third nested list item.</span></li>
-        </ol>
-      </span></li>
-    </ul>
-    <h5>Ordered Lists</h5>
-    <ol>
-      <li>This is the first item in an ordered list.</li>
-      <li>This is the second item in an ordered list.</li>
-      <li>This is the third item in an ordered list.</li>
-      <li>This is the fourth item in an ordered list.
+      <li>This is a list item in an unordered list.</li>
+      <li>This is a list item in an unordered list.</li>
+      <li>This is a list item in an unordered list.
         <ul>
-          <li>This is the first nested list item.</li>
-          <li>This is the second nested list item.</li>
-          <li>This is the third nested list item.</li>
+          <li>Nested one level.
+            <ul>
+              <li>Nested two levels.
+                <ul>
+                  <li>Nested three levels.
+                    <ul>
+                      <li>Nested four levels.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
       </li>
+    </ul>
+    <h6>Ordered Lists</h6>
+    <ol>
+      <li>This is a list item in an ordered list.</li>
+      <li>This is a list item in an ordered list.</li>
+      <li>This is a list item in an ordered list.
+        <ol>
+          <li>Nested one level.
+            <ol>
+              <li>Nested two levels.
+                <ol>
+                  <li>Nested three levels.
+                    <ol>
+                      <li>Nested four levels.</li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
     </ol>
+    <h6>Description Lists</h6>
+    <dl>
+      <dt>This is the term:</dt>
+      <dd>This is the description of the term.</dd>
+      <dt>This is the term:</dt>
+      <dd>This is the description of the term.</dd>
+    </dl>
   </section>
   <hr/>
   <section>

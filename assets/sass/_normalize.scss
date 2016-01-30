@@ -230,7 +230,7 @@ hr {
   margin: 0px;
   padding: ms(8) 0 ms(8) 0px;
   &:before {
-    background-color: $background-color;
+    background-color: $color--bg;
     content: "\2022\2003\2022\2003\2022";
     display: inline-block;
     font-family: $display;
@@ -265,7 +265,7 @@ samp {
 code,
 kbd,
 samp {
-  background-color: rgba($gray-darkest, .05);
+  background-color: rgba($color--gray-darkest, .05);
   padding: .325em .5em;
   border-radius: 3px;
 }
