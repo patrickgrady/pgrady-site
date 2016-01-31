@@ -1,9 +1,9 @@
-<body id="{{ page.name }}" class="{{ page.layout }}">
+<body class="{{ page.layout }} {{ page.class }}">
   <header class="header">
     <h1 class="element-invisible">{{ site.description }}</h1>
     <nav class="header-nav">
       <h2 class="element-invisible">Navigation</h2>
       <a class="header-nav__navlink" id="home" href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-      <a class="header-nav__navlink" id="about" href="{{ site.baseurl }}/about/" title="About">About</a>
+      <a class="header-nav__navlink" id="about" href="{{ site.baseurl }}/about" title="About">About</a>
     </nav>
   </header>

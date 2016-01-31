@@ -3,16 +3,6 @@
  * Defines header Component
  */
 
-.header {
-}
-
-.post .header {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-}
-
 .header-nav {
   font-family: $sans;
   font-size: 12px;
@@ -46,9 +36,13 @@
   }
 }
 
-body#aug .header-nav a:link,
-body#aug .header-nav a:visited {
+body.post .header-nav a:link,
+body.post .header-nav a:visited {
   color: white;
+}
+
+body.aug .header-nav a:link,
+body.aug .header-nav a:visited {
   &:hover,
   &:focus,
   &:active {
@@ -56,9 +50,8 @@ body#aug .header-nav a:visited {
   }
 }
 
-body#chop .header-nav a:link,
-body#chop .header-nav a:visited {
-  color: white;
+body.chop .header-nav a:link,
+body.chop .header-nav a:visited {
   &:hover,
   &:focus,
   &:active {
@@ -66,9 +59,8 @@ body#chop .header-nav a:visited {
   }
 }
 
-body#int .header-nav a:link,
-body#int .header-nav a:visited {
-  color: white;
+body.int .header-nav a:link,
+body.int .header-nav a:visited {
   &:hover,
   &:focus,
   &:active {

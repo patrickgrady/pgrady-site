@@ -3,6 +3,13 @@
  * Defines post Component
  */
 
+.post .header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
 .post-intro {
   background-position: 50% 50%;
   background-size: cover;
