@@ -195,7 +195,7 @@ li > ul {
 }
 
 .screen {
-  border: 1px solid #f1f1f1;
+  border: 1px solid $color--gray-lightest;
   box-shadow: 0px 2px 18px 0px rgba(0,0,0, .04);
   @include breakpoint(45em){
     border-radius: .25em;

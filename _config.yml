@@ -15,7 +15,7 @@ exclude:
   - /assets/packages
   - bower.json
   - gulpfile.js
-  - assets/sass/ #Compiling with Gulp
+  - assets/sass/ #Compiles with Gulp
   - README.md
   - .gitignore
   - .bowerrc
