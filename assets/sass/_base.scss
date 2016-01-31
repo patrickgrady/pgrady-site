@@ -18,9 +18,6 @@
 
 a:link,
 a:visited {
-  @include trans(.08s, ease);
-  text-decoration: none;
-  color: $color--active;
   background-image:
     linear-gradient(
       to top,
@@ -28,16 +25,19 @@ a:visited {
       transparent .033em
     );
   background-position-y: -.125em;
+  color: $color--active;
+  text-decoration: none;
+  @include trans(.08s, ease);
   &:hover,
   &:focus,
   &:active {
-    color: $color--active-hover;
     background-image:
       linear-gradient(
         to top,
         rgba($color--active-hover, .5) .033em,
         transparent .033em
       );
+    color: $color--active-hover;
   }
 }
 
@@ -76,8 +76,8 @@ h5 {
 h6 {
   color: $color--gray-medium;
   font-family: $sans;
-  font-weight: 600;
   font-size: 12px;
+  font-weight: 600;
   margin-bottom: ms(2);
   @extend %all-caps;
 }
@@ -101,8 +101,8 @@ figcaption {
 }
 
 img {
-  width: 100%;
   vertical-align: bottom;
+  width: 100%;
 }
 
 section {
@@ -121,8 +121,8 @@ ul {
 
 li > ol,
 li > ul {
-  padding-left: 1.1em;
   margin-bottom: 0px;
+  padding-left: 1.1em;
 }
 
 .img-inline {
@@ -164,8 +164,8 @@ li > ul {
   }
   display: flex;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: nowrap;
+    justify-content: center;
   & .flex-container {
     flex-basis: auto;
     margin-right: 10px;
