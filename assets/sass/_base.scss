@@ -185,8 +185,8 @@ li > ul {
   margin-top: ms(8);
   margin-bottom: ms(8);
   @include breakpoint(30em){
-    margin-top: ms(16);
-    margin-bottom: ms(16);
+    margin-top: ms(12);
+    margin-bottom: ms(12);
   }
 }
 
