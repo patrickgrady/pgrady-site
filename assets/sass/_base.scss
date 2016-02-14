@@ -126,7 +126,7 @@ li > ul {
 }
 
 .img-inline {
-  @include container(85%);
+  @include container(89%);
   @include breakpoint(30em){
     @include container(80%);
   }
@@ -139,7 +139,7 @@ li > ul {
 }
 
 .img-wide {
-  @include container(85%);
+  @include container(89%);
   @include breakpoint(30em){
     @include container(80%);
   }
@@ -152,7 +152,7 @@ li > ul {
 }
 
 .img-row {
-  @include container(85%);
+  @include container(89%);
   @include breakpoint(30em){
     @include container(80%);
   }
@@ -181,8 +181,17 @@ li > ul {
   }
 }
 
+.general {
+  margin-top: ms(8);
+  margin-bottom: ms(8);
+  @include breakpoint(30em){
+    margin-top: ms(16);
+    margin-bottom: ms(16);
+  }
+}
+
 .measure {
-  @include container(85%);
+  @include container(89%);
   @include breakpoint(30em){
     @include container(80%);
   }

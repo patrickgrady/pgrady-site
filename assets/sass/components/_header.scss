@@ -8,15 +8,22 @@
   font-size: 12px;
   font-weight: 600;
   line-height: 32px;
-  padding: ms(2);
+  margin: auto;
+  padding-top: ms(2);
+  padding-bottom: ms(2);
+  width: 90%;
   @include breakpoint(30em){
-    padding: ms(2) ms(6);
+    width: 92%;
+  }
+  @include breakpoint(45em){
+    padding-top: ms(6);
+    padding-bottom: ms(6);
+    width: 95%;
   }
 }
 
 .header-nav__navlink {
   line-height: 32px;
-  margin-left: .33em;
 }
 
 .header-nav__navlink#about {

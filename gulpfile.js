@@ -61,7 +61,7 @@ gulp.task('watch', function () {
   gulp.watch('assets/sass/**/*', ['sass']);
   gulp.watch([
     'assets/imgs/**/*',
-    'index*.html',
+    '*.html',
     '_config.yml',
     '_includes/*',
     '_layouts/*',
