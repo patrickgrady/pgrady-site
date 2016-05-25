@@ -13,7 +13,7 @@ var sourcemaps = require('gulp-sourcemaps');
 // Gulp tasks
 // Build the Jekyll Site
 gulp.task('jekyll-build', function (done) {
-  return cp.spawn('jekyll', ['build', '--config', '_config.yml,_config-live.yml'], {stdio: 'inherit'})
+  return cp.spawn('jekyll', ['build', '--config', '_config.yml,_config-dev.yml'], {stdio: 'inherit'})
     .on('close', done);
 });
 
