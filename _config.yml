@@ -4,7 +4,7 @@ author: Patrick Grady
 email: patrick.a.grady@gmail.com
 description: Design Portfolio of Patrick Grady
 permalink: none
-baseurl: "/" # For deployed site with CNAME
+baseurl: "" # For deployed site with CNAME
 # baseurl: /pgrady-site # For gh-pages deploy
 # baseurl: "" # For local development
 
