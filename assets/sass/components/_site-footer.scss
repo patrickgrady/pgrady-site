@@ -8,6 +8,8 @@
   font-size: 12px;
   color: $color--gray-medium;
   margin: auto;
+    display: flex;
+    justify-content: space-between;
   padding-top: ms(4);
   padding-bottom: ms(4);
   width: 90%;

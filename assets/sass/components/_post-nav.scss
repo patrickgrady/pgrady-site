@@ -33,6 +33,9 @@
   display: flex;
   flex-direction: row;
   margin-top: ms(1);
+  & a {
+    text-decoration: none;
+  }
 }
 
 .post-nav__post {
@@ -41,7 +44,7 @@
   height: 160px;
   width: 50%;
   &:first-of-type {
-    margin-right: 1px;
+    margin-right: 0px;
   }
   @include breakpoint(45em){
     height: 201px;

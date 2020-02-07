@@ -5,6 +5,9 @@
 
 .post-list {
   margin: 0;
+  & a {
+    text-decoration: none;
+  }
 }
 
 .post-list__post {
@@ -16,7 +19,7 @@
     justify-content: center;
     align-items: center;
   height: 368px;
-  margin-bottom: 1px;
+  margin-bottom: 0px;
   padding: 0 30px;
   position: relative;
   text-align: center;
@@ -30,10 +33,13 @@
       right: 0;
     z-index: 1;
     opacity: 0;
-    @include trans(.2s, ease);
+    @include trans(.1s, ease);
   }
   &.aug:before {
     background-color: $color--aug-secondary;
+  }
+  &.cent:before {
+    background-color: $color--cent-secondary;
   }
   &.chop:before {
     background-color: $color--chop-secondary;
@@ -44,11 +50,15 @@
   &:hover:before {
     opacity: .11;
   }
+  &:hover .post-list__button {
+    transform:translateY(-3px);
+  }
 }
 
 .post-list__info {
   position: relative;
   z-index: 2;
+  color: white;
 }
 .post-list__metadata {
   font-style: italic;
@@ -56,13 +66,13 @@
   margin-bottom: ms(-8);
 }
 
-.post-list__title {
-}
-
 .post-list__button {
   @extend %button;
   &.aug {
     background: $color--aug-primary;
+  }
+  &.cent {
+    background: $color--cent-primary;
   }
   &.chop {
     background: $color--chop-primary;

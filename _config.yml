@@ -19,3 +19,5 @@ exclude:
   - README.md
   - .gitignore
   - .bowerrc
+  - npm-debug.log
+  - .jekyll-metadata

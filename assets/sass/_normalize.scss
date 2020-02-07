@@ -228,7 +228,7 @@ hr {
   box-sizing: content-box; /* 1 */
   height: 0px;
   margin: 0px;
-  padding: ms(8) 0 ms(8) 0px;
+  padding: ms(2) 0 ms(8) 0px;
   &:before {
     background-color: $color--bg;
     content: "\2022\2003\2022\2003\2022";
@@ -260,6 +260,7 @@ pre,
 samp {
   font-family: $monospace;
   font-size: ms(-1);
+  font-weight: 500;
 }
 
 code,

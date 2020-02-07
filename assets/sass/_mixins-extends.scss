@@ -103,8 +103,9 @@
   color: $color--gray-dark !important;
   font-family: $sans;
   background-image: none !important;
+  @include trans(.1s, ease);
   &:hover {
-    transform: scale(1.1);
+    transform:translateY(-3px);
   }
 }
 

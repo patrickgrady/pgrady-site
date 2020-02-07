@@ -12,7 +12,7 @@ $verdana: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma: Tahoma, Verdana, "DejaVu Sans", sans-serif;
 $helvetica: Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial: Arial, Helvetica, "Nimbus Sans L", sans-serif;
-$monospace: "Lucida Sans Typewriter", "Courier New", Consolas,"Andale Mono", "Lucida Console", monospace;
+$monospace: "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New", Consolas, monospace;
 $sans: $helvetica;
 $serif: TiemposText, $georgia;
 $display: TiemposHeadline;
@@ -40,6 +40,8 @@ $color--active-hover: darken($color--active, 20%);
 // Brand Variables
 $color--aug-primary: #ffd200;
 $color--aug-secondary: #002147;
+$color--cent-primary: #FFBF3D;
+$color--cent-secondary: #1F1500;
 $color--chop-primary: #F98B36;
 $color--chop-secondary: #214D55;
 $color--int-primary: #DA2741;

@@ -9,6 +9,8 @@
   font-weight: 600;
   line-height: 32px;
   margin: auto;
+  display: flex;
+    justify-content: space-between;
   padding-top: ms(2);
   padding-bottom: ms(2);
   width: 90%;
@@ -22,16 +24,9 @@
   }
 }
 
-.header-nav__navlink {
-  line-height: 32px;
-}
-
-.header-nav__navlink#about {
-  float: right;
-}
-
 .header-nav a:link,
 .header-nav a:visited {
+  text-decoration: none;
   background-image: none;
   color: $color--gray-medium;
   @extend %all-caps;
@@ -47,7 +42,6 @@ body.post .header-nav a:link,
 body.post .header-nav a:visited {
   color: white;
 }
-
 body.aug .header-nav a:link,
 body.aug .header-nav a:visited {
   &:hover,
@@ -56,7 +50,14 @@ body.aug .header-nav a:visited {
     color: $color--aug-primary;
   }
 }
-
+body.cent .header-nav a:link,
+body.cent .header-nav a:visited {
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color--cent-primary;
+  }
+}
 body.chop .header-nav a:link,
 body.chop .header-nav a:visited {
   &:hover,
@@ -65,7 +66,6 @@ body.chop .header-nav a:visited {
     color: $color--chop-primary;
   }
 }
-
 body.int .header-nav a:link,
 body.int .header-nav a:visited {
   &:hover,

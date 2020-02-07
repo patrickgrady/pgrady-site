@@ -1,42 +1,20 @@
-// Gulp dependencies
-var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync');
-var cp = require('child_process');
-var gulp = require('gulp');
-var imagemin = require('gulp-imagemin');
-var reload = browserSync.reload;
-var rename = require('gulp-rename');
-var sass = require('gulp-sass');
-var size = require('gulp-size');
-var sourcemaps = require('gulp-sourcemaps');
+const child = require('child_process');
+const browserSync = require('browser-sync').create();
 
-// Gulp tasks
-// Build the Jekyll Site
-gulp.task('jekyll-build', function (done) {
-  return cp.spawn('jekyll', ['build', '--config', '_config.yml,_config-dev.yml'], {stdio: 'inherit'})
-    .on('close', done);
-});
+const gulp = require('gulp');
+const concat = require('gulp-concat');
+const gutil = require('gulp-util');
+const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
+const rename = require('gulp-rename');
 
-// Rebuild Jekyll & reload Browser-Sync
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-  browserSync.reload();
-});
-
-// Wait for jekyll to build, then launch the server
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
-  browserSync({
-    server: { baseDir: '_site' },
-    //port: 4000,
-    //host: 10.0.1.3,
-    scrollProportionally: true,
-    xip: true, //your.computer's.ip.xip.io:port
-    online: false
-  });
-});
+const siteRoot = '_site';
+const cssFiles = './assets/sass/*.scss';
 
 // Compile Sass with gulp-sass (Node-Sass), autoprefix, & minify css
 gulp.task('sass', function() {
-  gulp.src('./assets/sass/*.scss')
+  gulp.src('./assets/sass/**/*.?(s)css')
   .pipe(sourcemaps.init())
   .pipe(sass({
     errLogToConsole: true,
@@ -46,29 +24,39 @@ gulp.task('sass', function() {
   .pipe(gulp.dest('_site/assets/css'))
   .pipe(rename('styles.css'))
   .pipe(gulp.dest('assets/css'))
-  .pipe(browserSync.reload({stream:true}))
+  .pipe(browserSync.stream());
 });
 
-gulp.task('imagemin', function () {
-  gulp.src('./assets/imgs/*')
-  .pipe(imagemin({progressive:true}))
-  .pipe(gulp.dest('_site/assets/imgs'))
+gulp.task('jekyll', () => {
+  const jekyll = child.spawn('jekyll', ['build',
+    '--watch',
+    '--incremental',
+    '--drafts'
+  ]);
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
 });
 
-// Watch scss files for changes & recompile, reload with BrowserSync
-// Watch Jekyll source files, rebuild & reload with BrowserSync
-gulp.task('watch', function () {
-  gulp.watch('assets/sass/**/*', ['sass']);
-  gulp.watch([
-    'assets/imgs/**/*',
-    '*.html',
-    '_config.yml',
-    '_includes/*',
-    '_layouts/*',
-    '_posts/*'],
-    ['jekyll-rebuild', browserSync.reload]);
+gulp.task('serve', () => {
+  browserSync.init({
+    files: [siteRoot + '/**'],
+    watch: true,
+    port: 4000,
+    server: {
+      baseDir: siteRoot
+    },
+    xip: true, //your.computer's.ip.xip.io:port
+    online: false
   });
+  gulp.watch("./assets/sass/**/*.?(s)css", ['sass']);
+  gulp.watch("./*.html").on('change', browserSync.reload);
+});
 
-// Default Gulp task. Typing `gulp` will compile the sass,
-// build the Jekyll site, launch BrowserSync & watch files
-gulp.task('default', ['imagemin', 'browser-sync', 'watch']);
+gulp.task('default', ['sass', 'jekyll', 'serve']);
