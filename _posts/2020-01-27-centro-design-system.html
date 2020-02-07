@@ -18,7 +18,7 @@ links:
 
 <div class="measure">
   <h6>Design systems</h6>
-  <p>In simple terms, design systema are a kit of reusable parts, pieces, and standards that can be used to more efficiently build and scale digital products.</p>
+  <p>In simple terms, design systems are a kit of reusable parts, pieces, and standards that can be used to more efficiently build and scale digital products.</p>
 
   <p>Companies such as <a href="https://material.io/" target="_blank">Google</a>, <a href="https://www.lightningdesignsystem.com/" target="_blank">Salesforce</a>, <a href="https://polaris.shopify.com/" target="_blank">Shopify</a>, and <a href="https://primer.style/css/" target="_blank">Github</a> have all invested in their own systems due to the many  benefits a well-made design system can provide a product organization. Here are a few:</p>
 
@@ -42,9 +42,9 @@ links:
   <img class="" src="{{ site.baseurl }}/assets/imgs/cent-type-2.png"/>
 </figure>
 
-<p class="measure">Tto find visual harmony, the vertical unit of measure was derived from the baseline grid of six pixels. The horizontal unit was taken from the gutter width of 20 pixels. A square dimension can be acheived by using half- and quarter-values. These values are included in the app's CSS and provide modular sizing and spacing values.</p>
+<p class="measure">To find visual harmony, the vertical unit of measure was derived from the baseline grid of six pixels. The horizontal unit was taken from the gutter width of 20 pixels. A square dimension can be achieved by using half- and quarter-values. These values are included in the app's CSS and provide modular sizing and spacing values.</p>
 
-<p class="measure">The color palette began with the brand-gold and active-blue and was then expanded to support data visualization. The trick there was to surround the brand and active colors with hues that were visually distinct but equally vibrant, while avoiding the colors reserved to relay app status: Green for confirm, orange for warning, and red for error. Lastly, a monochromatic gray scale was included for page structure.</p>
+<p class="measure">The color palette began with the brand-gold and active-blue and was then expanded to support data visualization. The trick there was to surround the brand and active colors with hues that were visually distinct but equally vibrant, while avoiding the colors reserved to relay app status: green for confirm, orange for warning, and red for error. Lastly, a monochromatic gray scale was included for page structure.</p>
 
 <figure class="img-row">
   <div class="flex-container">
@@ -59,23 +59,23 @@ links:
   <img class="" src="{{ site.baseurl }}/assets/imgs/cent-data-vis.png"/>
 </figure>
 
-<p class="measure">You can see the extended color palette at work above in the data visualization section. These were built with Recharts.js and includes bar, line, area, and pie graphs. Some great functionality like scrubbing and responsive resizing are included out of the box.</p>
+<p class="measure">You can see the extended color palette at work above in the data visualization example. These were built with <a href="http://recharts.org/en-US/" target="_blank">Recharts.js</a> and includes bar, line, area, and pie graphs. Some great functionality like scrubbing and responsive resizing are included out of the box.</p>
 <hr/>
-<p class="measure">In atomic design principle, the smallest repeatable, unbreakable parts are known as atoms. Atoms may be assembled to create molecules. Molecules and atoms can be put together to create organisms. Atoms, molecules, and organisms can be put toghter to create more complex templates and pages. This nested hierarchy is easy to see in the following examples from Basis UI.</p>
+<p class="measure">In atomic design principle, the smallest repeatable, unbreakable parts are known as atoms. Atoms may be assembled to create molecules. Molecules and atoms can be put together to create organisms. Atoms, molecules, and organisms can be put together to create more complex templates and pages. This nested hierarchy is easy to see in the following examples from Basis UI.</p>
 
 <figure class="img-wide">
   <img class="" src="{{ site.baseurl }}/assets/imgs/cent-atomic.png"/>
 </figure>
 
-<p class="measure">In Sketch, atomic design is expressed as nested symbols. Symbols can accept responsive resizing instructions and contain any number of symbols inside them. Symbols of the same size can be swapped out in the right-hand palette (below). Text can also be overridden, meaning that state can now more easily be shown in a design comp. Removing some of the manual work from the equation allows teams to work faster and more accurately.</p>
+<p class="measure">In <a href="https://www.sketch.com/" target="_blank">Sketch</a>, atomic design is expressed as nested symbols. Symbols can accept responsive resizing instructions and contain any number of symbols inside them. Symbols of the same size can be swapped out in the right-hand palette (below). Text can also be overridden, meaning that state can now more easily be shown in a design comp. Removing some of the manual work from the equation allows teams to work faster and more accurately.</p>
 
 <figure class="img-inline">
   <img class="screen" src="{{ site.baseurl }}/assets/imgs/cent-sketch-symbols.jpg"/>
 </figure>
 
-<p class="measure">The best design system will fail if nobody knows about it. Some tools that can help you communicate your system to the wider product org are Storybook and Zeroheight. Storybook is a dev tool that allows React components to be worked on in isolation of the wider application. Since it lives alongside your JS and CSS, it's possible to mock up live components. At Centro I used this tool to troubleshoot UI issues and it was great way to interface with developers.</p>
+<p class="measure">The best design system will fail if nobody knows about it. Some tools that can help you communicate your system to the wider product org are Storybook and Zeroheight. <a href="https://storybook.js.org/" target="_blank">Storybook</a> is a dev tool that allows React components to be worked on in isolation of the wider application. Since it lives alongside your JS and CSS, it's possible to mock up live components. At Centro I used this tool to troubleshoot UI issues and it was great way to interface with developers.</p>
 
-<p class="measure">Zeroheight is a design tool that imports your Sketch assets and create a publicly availble web style guide. This also is a great opportunity to add documentation about when and how to use a component since Storybook tends to be less visible and a place for work work in progress. It also provides design tokens in the form of Sass, CSS, Less, JSON, iOS, and Android.</p>
+<p class="measure"><a href="https://zeroheight.com/" target="_blank">Zeroheight</a> is a design tool that imports your Sketch assets and create a publicly availble web style guide. This also is a great opportunity to add documentation about when and how to use a component since Storybook tends to be less visible and a place for work work in progress. It also provides design tokens in the form of Sass, CSS, Less, JSON, iOS, and Android.</p>
 
 <figure class="img-row">
   <div class="flex-container">
@@ -90,9 +90,9 @@ links:
   <h6>CSS for Systems</h6>
   <p>Design tokens are like design “atoms” for a codebase because the principle is the same: the smallest, reapeatable, unbreakable element. In code, if you want to repeat something many places a variable is used. Variables should be namespaced so they are organized and easy to understand. A color variable is perfect example: <code>--color-lime: #ABE016;</code>, <code>--color-berry: #E05ABC;</code>, etc.</p>
 
-  <p>Simply declaring design tokens alone is not enough for robust systems. We also need to assign <em>intent</em>. Let's make the brand color our berry variable: <code>--color-brand: --var(--color-berry);</code>. Nesting variables this way allows us to manage future changes more easily. Let's say our company rebrands and we need to update. Even if <code>--color-brand</code> is used 500 times in 50 components, we only need to change it in one place: <code>--color-brand: --var(--color-lime);</code>.</col></p>
+  <p>Simply declaring design tokens alone is not enough for robust systems. We also need to assign <em>intent</em>. Let's make the brand color our berry variable: <code>--color-brand: var(--color-berry);</code>. Nesting variables this way allows us to manage future changes more easily. Let's say our company rebrands and we need to update. Even if <code>--color-brand</code> is used 500 times in 50 components, we only need to change it in one place: <code>--color-brand: var(--color-lime);</code>.</col></p>
 
-  <p>Another way to take advantage of variables in your design system is to create a scale of values. For example, spacing. Let's say our baseline grid is 6px and we want to create a harmonious set of options for everyone to use: 6, 9, 12, 15, 18. T-shirt sizes are something everyone can relate to so let's go with xs, sm, md, lg, xl. Proper variable naming will get you this: <code>--spacing-md: 12px;</code>. Let's adjust the density of our Basis list molecule from earlier:</p>
+  <p>Another way to take advantage of variables in your design system is to create a scale of values that would get used many times. For example, spacing. Let's say our baseline grid is 6px and we want to create a harmonious set of options for everyone to use: 6, 9, 12, 15, 18. T-shirt sizes are something everyone can relate to so let's go with xs, sm, md, lg, xl. Proper variable naming will get you this: <code>--spacing-md: 12px;</code>. Now let's adjust the density of our Basis list molecule from earlier:</p>
 
 </div>
 
@@ -102,7 +102,7 @@ links:
 
 <div class="measure">
   <h6>Putting it all together</h6>
-  <p>In addition to maintaining the system in your design tools, any changes you make need to inherit downstream to anything that might need to consume it. For example, you may have a React web app, Storybook, a native app, a styleguide, and a marketing website. That's a lot to manage manually as it introduces a lot of opportunity for drift. Luckily there are tools like Invision DSM and Zeroheight that can automate some things, but the heavy lifting is done maintainable and scalable CSS, a solid process, and a dedicated cross-discipline team.</p>
+  <p>In addition to maintaining the system in your design tools, any changes you make need to inherit downstream to any number of things. For example, you may have a React web app, Storybook, a native app, a styleguide, and a marketing website. That's a lot to manage manually and it introduces a lot of opportunity for drift. Luckily there are tools like <a href="https://www.invisionapp.com/design-system-manager" target="_blank">Invision DSM</a> and Zeroheight that can automate some things, but the heavy lifting is done with maintainable and scalable CSS, a solid process, and a dedicated cross-discipline team.</p>
 
 </div>
 
