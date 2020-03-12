@@ -1,0 +1,146 @@
+---
+layout: post
+date: 2020-02-11
+title: Basis Product Design
+permalink: mapping/
+class: cent
+headline: "A Hypothesis-Driven Design Process for Mapping Data Sources"
+project-date: June–December 2019
+image: map-hero.jpg
+tags:
+  - Product Design, UX/UI, Prototype
+links:
+  - name: Mapping v1 Prototype
+    url: https://sketch.cloud/s/LWJ0y/a/z2q7dr/play
+    target: _blank
+    title: View prototype in Sketch Cloud
+  - name: Mapping v2 Prototype
+    url: https://sketch.cloud/s/roLAK/a/MrYJP9/play
+    target: _blank
+    title: View prototype in Sketch Cloud
+
+---
+
+<div class="measure">
+  <h6>Problem</h6>
+  <p>Mapping is a function in Basis where ad performance data from third-parties is pulled into the application so it can be associated with different line items in a campaign.</p>
+
+  <blockquote>“Right now, there are three ways to map creative and delivery for reporting. When we build out tactics, we have to attach ad tags within the tactic. Then, we have to go to the Creative screen and ‘map’ the creatives to the tactics. Then, in reporting, we have to go to the Actions screen in Analytics and ‘map’ delivery by tactic. My question is... why don't these three functions speak to each other more efficiently?”</blockquote>
+</div>
+
+<div class="measure">
+  <h6>Research</h6>
+  <p>We began our research by interviewing four people who dealt with mapping regularly as part of their role, including two in relevant leadership positions:</p>
+  <ul>
+    <li>Media Specialist — builds campaigns, interfaces with AdOps</li>
+    <li>AdOps Specialist — connects campaigns to data sources, QA's data</li>
+    <li>AdOps Manager — manages team, enforces process/standards</li>
+    <li>AdOps Director — develops process/standards</li>
+  </ul>
+</div>
+
+<figure class="img-inline">
+  <img class="screen" src="{{ site.baseurl }}/assets/imgs/map-original.jpg"/>
+</figure>
+
+<div class="measure">
+  <p>We interviewed each person for about 30 minutes, screensharing the current mapping screen and asking very general questions so we could uncover insights about the workflow that we weren't already aware of.</p>
+  <ul>
+    <li>“Can you walk me through how you map today?”</li>
+    <li>“How do you know which data source goes with which line item?”</li>
+    <li>“How do you know when to start mapping?”</li>
+    <li>“How do you know something has been successfully mapped?”</li>
+    <li>“How do you know when you're done mapping?”</li>
+    <li>“How do you know when there's an issue with a data source?”</li>
+    <li>“What happens if something is mapped incorrectly?”</li>
+    <li>“How often do errors happen?”</li>
+    <li>“How many data sources could there be in a large campaign?”</li>
+  </ul>
+
+  <h6>Top Findings</h6>
+  <p>Our conversations produced some interesting and actionalbe insights as well as validating some assumptions we had going in. If multiple people mentioned the same pain point, we knew there was added merit to addressing the concern.</p>
+  <ul>
+    <li>There can be up to <strong>800 data sources</strong> in a single campaign!</li>
+    <li>There's too much extra information on the screen.</li>
+    <li>It's hard to tell which data sources are mapped to which line items.</li>
+    <li>Not being able to remove incorrect, redundant/duplicate data sources makes it hard to tell if you have selected the right thing.</li>
+    <li>There's a lack of effective filtering options.</li>
+    <li>Lack of bulk selection/actions takes longer.</li>
+    <li>On average, errors occur <strong>2–4 times a month</strong> and requires re-work.</li>
+  </ul>
+</div>
+<hr/>
+
+<div class="measure">
+  <h6>Questions</h6>
+  <p>Based on cross-functional discussion by product, development, and design, we posed the following questions:</p>
+  <ul>
+    <li>How can we make mapping faster and easier for people?</li>
+    <li>How can we give people more confidence that they've completed their task correctly?</li>
+    <li>Does differentiating more clearly between planning, configuration, and performance make sense to people who use this feature?</li>
+  </ul>
+  <p>Then as the designer, I tried to create a design concept that would address our questions and top-findings in the best way possible. This includes multiple concepts and rounds of feedback from the larger design team and results in something to share back with the cross-functional feature team.</p>
+  <p>At this stage I'm working quick and loose but with enough detail to communicate the key attributes of the idea, the general workflow, additional functionality in bullet points, and rationale behind design decisions.</p>
+</div>
+
+<figure class="img-wide">
+  <img class="" src="{{ site.baseurl }}/assets/imgs/map-concept.png"/>
+</figure>
+
+<div class="measure">
+  <p>In this case I believed that there was enough work involved with mapping that it could support a new view. A new view meant that we could reduce meta-information to only what's necessary for mapping and get more items on the screen at any one time. To more effectively communicate mapping status of the items on the screen, I went for visual cues like an indent, linkage, or stateful color. An additional affordance of, when selecting an item on the left, would group mapped items at the top of the right-side list. This would mean that users would not have to scroll for minutes to determine what's been mapped.</p>
+</div>
+
+<div class="measure">
+  <p>Once the conept had been blessed by the cross-functional team, I made a lo-fi clickable prototype and ran it by the same people we talked to earlier.</p>
+</div>
+
+<figure class="img-inline">
+  <a href="https://sketch.cloud/s/LWJ0y/a/z2q7dr/play" target="_blank"><img class="screen" src="{{ site.baseurl }}/assets/imgs/map-lofi-proto.jpg"/></a>
+  <figcaption>View prototype</figcaption>
+</figure>
+
+<div class="measure">
+  <p>The feedback was pretty positive overall, with everyone liking mapping getting it's own view. Additionally, people liked the idea of fine-tuning the information on the screen as well as feeling like the visual changes were helpful. The questions came mostly for very specific functionality that was not accounted for intentionally.</p>
+
+  <p>The next step was to address those concerns and nail down exactly what information is most useful to people who map, as well as filtering and bulk functionality to make the workflow more efficient.</p>
+</div>
+
+<figure class="img-inline">
+  <a href="https://sketch.cloud/s/roLAK/a/MrYJP9/play" target="_blank"><img class="screen" src="{{ site.baseurl }}/assets/imgs/map-hifi-proto.jpg"/></a>
+  <figcaption>View prototype</figcaption>
+</figure>
+
+<figure class="img-wide">
+  <img class="" src="{{ site.baseurl }}/assets/imgs/map-specs.png"/>
+</figure>
+
+<div class="measure">
+  <h6>Hypothesis</h6>
+  <ul>
+    <li>We believe that by creating a dedicated mapping view (for creative and data sources) will enable AdOps and Media Specialists to be more productive and happier.</li>
+  </ul>
+</div>
+
+<div class="measure">
+  <h6>Experiment</h6>
+    <ul>
+    <li>We can prove that hypothesis by building the new mapping view and A/B testing a large campaign against the original view.</li>
+  </ul>
+</div>
+
+<div class="measure">
+  <h6>Evidence</h6>
+  <ul>
+    <li>We'll know we've been successful when time-on-task and mapping errors are both lower than to the original view.</li>
+    <li>Another round of user interviews show an increase in positive qualitative feedback.</li>
+  </ul>
+</div>
+
+<div class="measure">
+  <h6>Iterate</h6>
+  <ol>
+    <li>Implement any filtering or efficiency-related functionality beyond the basic that we become aware of while gathering feedback on our experiment.</li>
+    <li>Widen scope to investigate whether creative mapping being co-located with mapping delivery also makes sense to our users.</li>
+  </ol>
+</div>
