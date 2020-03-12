@@ -27,6 +27,11 @@ a:visited {
   }
 }
 
+blockquote {
+  font-style: italic;
+  text-indent: -.425em;
+  margin: 1.8em 2.2em 2.6em 2.2em;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $display;
   font-weight: normal;
