@@ -74,3 +74,11 @@ body.int .header-nav a:visited {
     color: $color--int-primary;
   }
 }
+body.map .header-nav a:link,
+body.map .header-nav a:visited {
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color--map-primary;
+  }
+}

@@ -13,7 +13,7 @@
 .post-list__post {
   background-color: $color--gray-light;
   background-size: cover;
-  background-position: 50% 10%;
+  background-position: 50% 45%;
   color: white;
   display: flex;
     justify-content: center;
@@ -46,6 +46,9 @@
   }
   &.int:before {
     background-color: $color--int-secondary;
+  }
+  &.map:before {
+    background-color: $color--cent-secondary;
   }
   &:hover:before {
     opacity: .11;
@@ -81,5 +84,8 @@
   &.int {
     background: $color--int-primary;
     color: white !important;
+  }
+  &.map {
+    background: $color--cent-primary;
   }
 }
