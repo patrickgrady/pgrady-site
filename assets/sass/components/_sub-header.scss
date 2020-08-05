@@ -1,0 +1,25 @@
+/*!
+ * @file (SMACSS module)
+ * Defines header Component
+ */
+
+.sub-header {
+  //background-color: $color--gray-light;
+}
+
+.sub-header__text {
+  color: $color--gray-medium;
+  font-family: $sans;
+  font-size: ms(-3);
+  font-weight: 600;
+  line-height: 1.33;
+  margin: ms(20) 0 ms(4) 0;
+
+  @include breakpoint(30em){
+    margin: ms(20) 0 ms(6) 0;
+
+  }
+  @include breakpoint(45em){
+    margin: ms(20) 0 ms(10) 0;
+  }
+}

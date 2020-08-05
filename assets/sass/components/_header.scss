@@ -5,22 +5,17 @@
 
 .header-nav {
   font-family: $sans;
-  font-size: 12px;
+  font-size: ms(-4);
   font-weight: 600;
-  line-height: 32px;
-  margin: auto;
+  line-height: 1.5;
   display: flex;
     justify-content: space-between;
-  padding-top: ms(2);
-  padding-bottom: ms(2);
-  width: 90%;
+  padding: 0px 0px ms(6) 0px;
   @include breakpoint(30em){
-    width: 92%;
+    padding: 0px 0px ms(6) 0px;
   }
   @include breakpoint(45em){
-    padding-top: ms(6);
-    padding-bottom: ms(6);
-    width: 95%;
+    padding: 0px 0px ms(10) 0px;
   }
 }
 
@@ -40,7 +35,7 @@
 
 body.post .header-nav a:link,
 body.post .header-nav a:visited {
-  color: white;
+  //color: white;
 }
 body.aug .header-nav a:link,
 body.aug .header-nav a:visited {
