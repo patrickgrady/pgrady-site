@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 <!-- Save this and the post nav to see updates -->
@@ -11,7 +11,7 @@ title: Home
       <div class="post-list__info">
         <p class="post-list__metadata">{{ post.project-date }}</p>
         <h2 class="post-list__title">{{ post.title }}</h2>
-        <p>{{ post.headline }}</p>
+        <p class="post-list__headline">{{ post.headline }}</p>
         <div class="post-list__button {{ post.class }}" href="{{ site.baseurl }}{{ post.url }}">View project</div>
       </div>
     </a>

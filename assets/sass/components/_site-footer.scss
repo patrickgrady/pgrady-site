@@ -5,21 +5,15 @@
 
 .siteFooter {
   font-family: $sans;
-  font-size: 12px;
+  font-size: ms(-4);
+  font-weight: 600;
   color: $color--gray-medium;
   margin: auto;
     display: flex;
     justify-content: space-between;
-  padding-top: ms(4);
-  padding-bottom: ms(4);
-  width: 90%;
+  padding: 0px 0px ms(2) 0px;
   @include breakpoint(30em){
-    width: 92%;
-  }
-  @include breakpoint(45em){
-    padding-top: ms(9);
-    padding-bottom: ms(9);
-    width: 95%;
+    padding: 0px 0px 0px 0px;
   }
 }
 

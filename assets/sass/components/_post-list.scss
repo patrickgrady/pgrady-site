@@ -4,7 +4,7 @@
  */
 
 .post-list {
-  margin: 0;
+  margin: 0px;
   & a {
     text-decoration: none;
   }
@@ -18,11 +18,24 @@
   display: flex;
     justify-content: center;
     align-items: center;
-  height: 368px;
-  margin-bottom: 0px;
-  padding: 0 30px;
+  margin: 0px 0px ms(2) 0px;
+  padding: 0 ms(1);
   position: relative;
   text-align: center;
+  //height: ms(24);
+  height: calc(100vw * (1/1.5));
+  @include breakpoint(30em){
+    //height: 640px;
+    height: calc(100vw * (1/2));
+    //height: 66vh;
+    margin: 0px 0px ms(4) 0px;
+  }
+  @include breakpoint(45em){
+    //height: 640px;
+    height: calc(100vw * (1/3));
+    //height: 66vh;
+    margin: 0px 0px ms(8) 0px;
+  }
   &:before {
     content: "";
     display: block;
@@ -32,7 +45,7 @@
       bottom: 0;
       right: 0;
     z-index: 1;
-    opacity: 0;
+    opacity: .09;
     @include trans(.1s, ease);
   }
   &.aug:before {
@@ -51,7 +64,7 @@
     background-color: $color--cent-secondary;
   }
   &:hover:before {
-    opacity: .11;
+    opacity: .21;
   }
   &:hover .post-list__button {
     transform:translateY(-3px);
@@ -62,11 +75,35 @@
   position: relative;
   z-index: 2;
   color: white;
+  font-size: ms(-1);
+  @include breakpoint(30em){
+    font-size: ms(1);
+  }
+}
+.post-list__headline {
+  font-size: ms(-1);
+  line-height: 1.33;
+  margin-bottom: ms(2);
 }
 .post-list__metadata {
   font-style: italic;
   font-size: ms(-1);
-  margin-bottom: ms(-8);
+  margin-bottom: ms(-10);
+}
+.post-list__title {
+  font-size: ms(2.5);
+  @include breakpoint(30em){
+    font-size: ms(3);
+  }
+  @include breakpoint(45em){
+    font-size: ms(3.5);
+  }
+  @include breakpoint(60em){
+    font-size: ms(4);
+  }
+  @include breakpoint(75em){
+    font-size: ms(6);
+  }
 }
 
 .post-list__button {

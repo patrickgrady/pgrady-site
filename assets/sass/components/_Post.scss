@@ -3,12 +3,14 @@
  * Defines post Component
  */
 
+/*!
 .post .header {
   position: absolute;
     top: 0px;
     right: 0px;
     left: 0px;
 }
+ */
 
 .post-hero {
   background-position: 50% 50%;
@@ -17,17 +19,35 @@
   display: flex;
     justify-content: center;
     align-items: flex-end;
-  height: 570px;
+  height: 50vh;
+  //height: calc(100vw * (9/16));
   margin: 0px 0px ms(8) 0px;
+  @include breakpoint(30em){
+    //height: 640px;
+    //height: calc(100vw * (9/16));
+    height: 66vh;
+  }
   @include breakpoint(45em){
-    height: 640px;
+    //height: 640px;
+    //height: calc(100vw * (9/16));
+    height: 75vh;
   }
 }
 
 .post-hero__headline {
   text-align: center;
-  @include breakpoint(60em){
+  font-size: ms(2.5);
+  @include breakpoint(30em){
+    font-size: ms(5);
+  }
+  @include breakpoint(45em){
     font-size: ms(7);
+  }
+  @include breakpoint(60em){
+    //font-size: ms();
+  }
+    @include breakpoint(90em){
+    //font-size: ms(7);
   }
 }
 

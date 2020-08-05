@@ -52,7 +52,7 @@ gulp.task('serve', () => {
     server: {
       baseDir: siteRoot
     },
-    xip: true, //your.computer's.ip.xip.io:port
+    xip: true, //this.computer's.ip.xip.io:port
     online: false
   });
   gulp.watch("./assets/sass/**/*.?(s)css", ['sass']);
