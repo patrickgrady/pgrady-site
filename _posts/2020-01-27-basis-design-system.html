@@ -75,7 +75,7 @@ links:
 
 <p class="measure">The best design system will fail if nobody knows about it. Some tools that can help you communicate your system to the wider product org are Storybook and Zeroheight. <a href="https://storybook.js.org/" target="_blank">Storybook</a> is a dev tool that allows React components to be worked on in isolation of the wider application. Since it lives alongside your JS and CSS, it's possible to mock up live components. At Centro I used this tool to troubleshoot UI issues and it was great way to interface with developers.</p>
 
-<p class="measure"><a href="https://zeroheight.com/" target="_blank">Zeroheight</a> is a design tool that imports your Sketch assets and create a publicly availble web style guide. This also is a great opportunity to add documentation about when and how to use a component since Storybook tends to be less visible and a place for work work in progress. It also provides design tokens in the form of Sass, CSS, Less, JSON, iOS, and Android.</p>
+<p class="measure"><a href="https://zeroheight.com/" target="_blank">Zeroheight</a> is a design tool that imports your Sketch assets and create a publicly available web style guide. This also is a great opportunity to add documentation about when and how to use a component since Storybook tends to be less visible and a place for work work in progress. It also provides design tokens in the form of Sass, CSS, Less, JSON, iOS, and Android.</p>
 
 <figure class="img-row">
   <div class="flex-container">
@@ -88,7 +88,7 @@ links:
 
 <div class="measure">
   <h6>CSS for Systems</h6>
-  <p>Design tokens are like design “atoms” for a codebase because the principle is the same: the smallest, reapeatable, unbreakable element. In code, if you want to repeat something many places a variable is used. Variables should be namespaced so they are organized and easy to understand. A color variable is perfect example: <code>--color-lime: #ABE016;</code>, <code>--color-berry: #E05ABC;</code>, etc.</p>
+  <p>Design tokens are like design “atoms” for a codebase because the principle is the same: the smallest, repeatable, unbreakable element. In code, if you want to repeat something many places a variable is used. Variables should be namespaced so they are organized and easy to understand. A color variable is perfect example: <code>--color-lime: #ABE016;</code>, <code>--color-berry: #E05ABC;</code>, etc.</p>
 
   <p>Simply declaring design tokens alone is not enough for robust systems. We also need to assign <em>intent</em>. Let's make the brand color our berry variable: <code>--color-brand: var(--color-berry);</code>. Nesting variables this way allows us to manage future changes more easily. Let's say our company rebrands and we need to update. Even if <code>--color-brand</code> is used 500 times in 50 components, we only need to change it in one place: <code>--color-brand: var(--color-lime);</code>.</col></p>
 
@@ -102,7 +102,7 @@ links:
 
 <div class="measure">
   <h6>Putting it all together</h6>
-  <p>In addition to maintaining the system in your design tools, any changes you make need to inherit downstream to any number of things. For example, you may have a React web app, Storybook, a native app, a styleguide, and a marketing website. That's a lot to manage manually and it introduces a lot of opportunity for drift. Luckily there are tools like <a href="https://www.invisionapp.com/design-system-manager" target="_blank">Invision DSM</a> and Zeroheight that can automate some things, but the heavy lifting is done with maintainable and scalable CSS, a solid process, and a dedicated cross-discipline team.</p>
+  <p>In addition to maintaining the system in your design tools, any changes you make need to inherit downstream to any number of things. For example, you may have a React web app, Storybook, a native app, a style guide, and a marketing website. That's a lot to manage manually and it introduces a lot of opportunity for drift. Luckily there are tools like <a href="https://www.invisionapp.com/design-system-manager" target="_blank">Invision DSM</a> and Zeroheight that can automate some things, but the heavy lifting is done with maintainable and scalable CSS, a solid process, and a dedicated cross-discipline team.</p>
 
 </div>
 
